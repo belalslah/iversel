@@ -16,12 +16,15 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | iversel - AI Automation',
-    default: 'iversel - AI Automation Solutions',
+    template: '%s | iversel',
+    default: 'iversel - AI Automation Solutions for Business',
   },
-  description: 'Discover powerful AI agents and automation solutions starting from just $30. Accessible AI for everyone.',
+  description: 'Transform your business with AI automation starting at $30. Deploy powerful AI agents in minutes. Enterprise-grade solutions made accessible.',
   authors: [{ name: 'iversel' }],
   metadataBase: new URL('https://iversel.com'),
+  alternates: {
+    canonical: 'https://iversel.com',
+  },
   verification: {
     google: 'wuaEY7vRuFYdfRzLbcJZNjKBSYl_BScllRXWlBhN0ag',
   },

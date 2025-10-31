@@ -5,8 +5,11 @@ import { Target, Users, Zap, Heart } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Us',
-  description: 'Learn about iversel and our mission to make AI automation accessible to everyone.',
+  title: 'About iversel - Making AI Automation Accessible',
+  description: 'Discover iversel\'s mission to democratize AI automation. We make enterprise-grade AI solutions affordable and accessible for businesses of all sizes.',
+  alternates: {
+    canonical: 'https://iversel.com/about',
+  },
 }
 
 export default function AboutPage() {

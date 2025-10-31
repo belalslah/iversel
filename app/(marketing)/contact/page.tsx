@@ -5,8 +5,11 @@ import { Mail, MessageSquare, Clock, MapPin } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact Us',
-  description: 'Get in touch with iversel. We&apos;re here to help you find the perfect AI automation solution.',
+  title: 'Contact iversel - Get AI Automation Support',
+  description: 'Get in touch with our AI automation experts. We\'re here to help you find the perfect solution and answer all your questions about AI implementation.',
+  alternates: {
+    canonical: 'https://iversel.com/contact',
+  },
 }
 
 export default function ContactPage() {

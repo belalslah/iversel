@@ -3,8 +3,11 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service',
-  description: 'Read the terms and conditions for using iversel services.',
+  title: 'Terms of Service - iversel Usage Agreement',
+  description: 'Review iversel\'s terms of service and usage agreement. Understand your rights and responsibilities when using our AI automation platform.',
+  alternates: {
+    canonical: 'https://iversel.com/terms',
+  },
 }
 
 export default function TermsPage() {

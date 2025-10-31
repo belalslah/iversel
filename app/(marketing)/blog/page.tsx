@@ -6,8 +6,11 @@ import type { Metadata } from 'next'
 import { Calendar, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Blog',
-  description: 'Learn about AI automation, best practices, and how to transform your business with artificial intelligence.',
+  title: 'AI Automation Blog - Tips, Guides & Best Practices',
+  description: 'Expert insights on AI automation, implementation guides, and proven strategies to transform your business with artificial intelligence technology.',
+  alternates: {
+    canonical: 'https://iversel.com/blog',
+  },
 }
 
 export default function BlogPage() {

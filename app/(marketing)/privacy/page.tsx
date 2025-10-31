@@ -3,8 +3,11 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy',
-  description: 'Learn how iversel collects, uses, and protects your personal information.',
+  title: 'Privacy Policy - How iversel Protects Your Data',
+  description: 'Read iversel\'s privacy policy to understand how we collect, use, and protect your personal information. Your data security is our top priority.',
+  alternates: {
+    canonical: 'https://iversel.com/privacy',
+  },
 }
 
 export default function PrivacyPage() {

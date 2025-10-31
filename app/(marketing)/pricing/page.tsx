@@ -5,8 +5,11 @@ import { Check, Sparkles } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Pricing',
-  description: 'Simple, transparent pricing for AI automation solutions. Choose the plan that fits your business needs.',
+  title: 'Pricing - Affordable AI Automation Plans from $30',
+  description: 'Transparent pricing for AI automation solutions starting at just $30. Choose the perfect plan for your business with no hidden fees or surprises.',
+  alternates: {
+    canonical: 'https://iversel.com/pricing',
+  },
 }
 
 const pricingTiers = [

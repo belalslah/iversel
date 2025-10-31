@@ -4,8 +4,11 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'AI Solutions',
-  description: 'Browse our library of pre-built AI agents and automation solutions. Find the perfect AI solution for your business needs.',
+  title: 'AI Solutions - Pre-Built Agents & Automation Tools',
+  description: 'Browse our library of ready-to-deploy AI agents and automation solutions. Find the perfect AI tool to streamline your business operations today.',
+  alternates: {
+    canonical: 'https://iversel.com/solutions',
+  },
 }
 
 export default function SolutionsPage() {

@@ -5,8 +5,11 @@ import { Briefcase, Users, Zap, Heart, TrendingUp, Globe } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Careers',
-  description: 'Join the iversel team and help us make AI automation accessible to everyone.',
+  title: 'Careers at iversel - Join Our AI Automation Team',
+  description: 'Join iversel and help democratize AI automation. Explore exciting career opportunities in AI, engineering, and business development with our growing team.',
+  alternates: {
+    canonical: 'https://iversel.com/careers',
+  },
 }
 
 const openPositions = [

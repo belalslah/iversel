@@ -3,8 +3,11 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy',
-  description: 'Learn about how iversel uses cookies and similar tracking technologies.',
+  title: 'Cookie Policy - How iversel Uses Cookies',
+  description: 'Learn about iversel\'s cookie policy and how we use cookies to improve your experience. Control your cookie preferences and understand data tracking.',
+  alternates: {
+    canonical: 'https://iversel.com/cookies',
+  },
 }
 
 export default function CookiesPage() {

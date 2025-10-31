@@ -30,9 +30,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     }
   }
   
+  // Ensure description is between 125-155 characters
+  const description = post.metadata.description.length > 155 
+    ? post.metadata.description.substring(0, 152) + '...'
+    : post.metadata.description.length < 125
+    ? post.metadata.description + ' Learn more about AI automation and implementation strategies for your business.'
+    : post.metadata.description
+  
   return {
     title: post.metadata.title,
-    description: post.metadata.description,
+    description: description,
+    alternates: {
+      canonical: `https://iversel.com/blog/${slug}`,
+    },
   }
 }
 
