@@ -15,7 +15,7 @@ All titles optimized for maximum visibility in search results.
 All descriptions optimized for complete display in SERPs with compelling copy.
 
 ### Canonical Tags: Automatic
-Each blog post automatically gets the correct canonical URL: `https://iversel.com/blog/[slug]`
+Each blog post automatically gets the correct canonical URL: `https://iversel.netlify.app/blog/[slug]`
 
 ---
 
@@ -25,7 +25,7 @@ Each blog post automatically gets the correct canonical URL: `https://iversel.co
 - **Slug**: `5-ways-ai-automation-saves-money`
 - **Title**: "5 Ways AI Automation Saves Your Business Money" (51 chars) ✅
 - **Description**: "Discover five proven ways AI automation reduces operational costs and improves your bottom line. Real examples and ROI calculations included." (142 chars) ✅
-- **Canonical**: `https://iversel.com/blog/5-ways-ai-automation-saves-money`
+- **Canonical**: `https://iversel.netlify.app/blog/5-ways-ai-automation-saves-money`
 - **Date**: 2025-01-10
 - **Category**: Business Strategy
 
@@ -33,7 +33,7 @@ Each blog post automatically gets the correct canonical URL: `https://iversel.co
 - **Slug**: `what-is-an-ai-agent`
 - **Title**: "What is an AI Agent? Complete Guide for Business" (50 chars) ✅
 - **Description**: "Learn what AI agents are, how they work, and how they can transform your business operations. A comprehensive guide for business owners." (138 chars) ✅
-- **Canonical**: `https://iversel.com/blog/what-is-an-ai-agent`
+- **Canonical**: `https://iversel.netlify.app/blog/what-is-an-ai-agent`
 - **Date**: 2025-01-15
 - **Category**: Education
 
@@ -41,7 +41,7 @@ Each blog post automatically gets the correct canonical URL: `https://iversel.co
 - **Slug**: `signs-your-business-is-ready-for-ai-automation`
 - **Title**: "5 Signs Your Business is Ready for AI Automation" (50 chars) ✅
 - **Description**: "Discover five clear indicators that your business would benefit from AI automation and learn the exact next steps to take for successful implementation." (155 chars) ✅
-- **Canonical**: `https://iversel.com/blog/signs-your-business-is-ready-for-ai-automation`
+- **Canonical**: `https://iversel.netlify.app/blog/signs-your-business-is-ready-for-ai-automation`
 - **Date**: 2025-01-20
 - **Category**: Business Strategy
 
@@ -49,7 +49,7 @@ Each blog post automatically gets the correct canonical URL: `https://iversel.co
 - **Slug**: `ai-automation-for-small-businesses`
 - **Title**: "Pre-Built vs Custom AI: Best Choice for Small Business" (56 chars) ✅
 - **Description**: "Should you build custom AI or buy pre-built solutions? An honest cost comparison and decision framework for small business owners choosing AI automation." (155 chars) ✅
-- **Canonical**: `https://iversel.com/blog/ai-automation-for-small-businesses`
+- **Canonical**: `https://iversel.netlify.app/blog/ai-automation-for-small-businesses`
 - **Date**: 2025-01-22
 - **Category**: Business Strategy
 
@@ -57,7 +57,7 @@ Each blog post automatically gets the correct canonical URL: `https://iversel.co
 - **Slug**: `how-to-automate-customer-support`
 - **Title**: "Automate Customer Support Without Losing Human Touch" (54 chars) ✅
 - **Description**: "A practical guide to implementing AI customer support that improves response times while maintaining personal, empathetic service your customers love." (151 chars) ✅
-- **Canonical**: `https://iversel.com/blog/how-to-automate-customer-support`
+- **Canonical**: `https://iversel.netlify.app/blog/how-to-automate-customer-support`
 - **Date**: 2025-01-25
 - **Category**: Implementation Guide
 
@@ -65,7 +65,7 @@ Each blog post automatically gets the correct canonical URL: `https://iversel.co
 - **Slug**: `the-real-cost-of-manual-processes`
 - **Title**: "Real Cost of Manual Processes: ROI Calculator" (47 chars) ✅
 - **Description**: "Discover the hidden costs of manual work in your business and calculate exactly how much automation could save you. Includes free ROI calculator tool." (153 chars) ✅
-- **Canonical**: `https://iversel.com/blog/the-real-cost-of-manual-processes`
+- **Canonical**: `https://iversel.netlify.app/blog/the-real-cost-of-manual-processes`
 - **Date**: 2025-01-28
 - **Category**: Business Strategy
 
@@ -73,7 +73,7 @@ Each blog post automatically gets the correct canonical URL: `https://iversel.co
 - **Slug**: `we-are-too-small-for-ai`
 - **Title**: "Too Small for AI? Why This Myth Costs You Money" (49 chars) ✅
 - **Description**: "Small businesses often believe AI automation is only for enterprises. Discover why that mindset is leaving thousands of dollars on the table monthly." (151 chars) ✅
-- **Canonical**: `https://iversel.com/blog/we-are-too-small-for-ai`
+- **Canonical**: `https://iversel.netlify.app/blog/we-are-too-small-for-ai`
 - **Date**: 2025-02-01
 - **Category**: Business Strategy
 
@@ -81,7 +81,7 @@ Each blog post automatically gets the correct canonical URL: `https://iversel.co
 - **Slug**: `ai-automation-explained`
 - **Title**: "AI Automation Explained: Behind the Scenes Guide" (50 chars) ✅
 - **Description**: "A transparent look at how AI automation actually works behind the scenes. Demystify the technology and understand the deployment process step-by-step." (151 chars) ✅
-- **Canonical**: `https://iversel.com/blog/ai-automation-explained`
+- **Canonical**: `https://iversel.netlify.app/blog/ai-automation-explained`
 - **Date**: 2025-02-05
 - **Category**: Education
 
@@ -89,7 +89,7 @@ Each blog post automatically gets the correct canonical URL: `https://iversel.co
 - **Slug**: `ai-automation-for-acommerce`
 - **Title**: "AI Automation for E-commerce: 7 Tasks to Automate" (51 chars) ✅
 - **Description**: "A practical checklist of seven high-impact e-commerce tasks perfect for AI automation. Includes step-by-step implementation guides for each task." (146 chars) ✅
-- **Canonical**: `https://iversel.com/blog/ai-automation-for-acommerce`
+- **Canonical**: `https://iversel.netlify.app/blog/ai-automation-for-acommerce`
 - **Date**: 2025-02-08
 - **Category**: Industry Guide
 
@@ -119,7 +119,7 @@ Automatically generated in `app/(marketing)/blog/[slug]/page.tsx`:
 
 ```typescript
 alternates: {
-  canonical: `https://iversel.com/blog/${slug}`,
+  canonical: `https://iversel.netlify.app/blog/${slug}`,
 }
 ```
 
@@ -171,7 +171,7 @@ All blog posts are automatically included in the sitemap with:
 - **Change Frequency**: Weekly
 - **Last Modified**: Auto-updated
 
-Sitemap URL: `https://iversel.com/sitemap.xml`
+Sitemap URL: `https://iversel.netlify.app/sitemap.xml`
 
 ---
 

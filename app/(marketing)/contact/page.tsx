@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Contact iversel - Get AI Automation Support',
   description: 'Get in touch with our AI automation experts. We\'re here to help you find the perfect solution and answer all your questions about AI implementation.',
   alternates: {
-    canonical: 'https://iversel.com/contact',
+    canonical: 'https://iversel.netlify.app/contact',
   },
 }
 

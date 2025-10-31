@@ -11,61 +11,61 @@ Complete verification that every page on the website has unique, SEO-optimized m
 ### 1. **Homepage**
 - **Title**: "iversel - AI Automation Solutions for Business" (49 chars) ✅
 - **Description**: "Transform your business with AI automation starting at $30. Deploy powerful AI agents in minutes. Enterprise-grade solutions made accessible." (143 chars) ✅
-- **URL**: `https://iversel.com/`
+- **URL**: `https://iversel.netlify.app/`
 - **Canonical**: ✅
 
 ### 2. **About Page**
 - **Title**: "About iversel - Making AI Automation Accessible" (48 chars) ✅
 - **Description**: "Discover iversel's mission to democratize AI automation. We make enterprise-grade AI solutions affordable and accessible for businesses of all sizes." (151 chars) ✅
-- **URL**: `https://iversel.com/about`
+- **URL**: `https://iversel.netlify.app/about`
 - **Canonical**: ✅
 
 ### 3. **Solutions List**
 - **Title**: "AI Solutions - Pre-Built Agents & Automation Tools" (52 chars) ✅
 - **Description**: "Browse our library of ready-to-deploy AI agents and automation solutions. Find the perfect AI tool to streamline your business operations today." (146 chars) ✅
-- **URL**: `https://iversel.com/solutions`
+- **URL**: `https://iversel.netlify.app/solutions`
 - **Canonical**: ✅
 
 ### 4. **Blog List**
 - **Title**: "AI Automation Blog - Tips, Guides & Best Practices" (52 chars) ✅
 - **Description**: "Expert insights on AI automation, implementation guides, and proven strategies to transform your business with artificial intelligence technology." (147 chars) ✅
-- **URL**: `https://iversel.com/blog`
+- **URL**: `https://iversel.netlify.app/blog`
 - **Canonical**: ✅
 
 ### 5. **Pricing Page**
 - **Title**: "Pricing - Affordable AI Automation Plans from $30" (51 chars) ✅
 - **Description**: "Transparent pricing for AI automation solutions starting at just $30. Choose the perfect plan for your business with no hidden fees or surprises." (146 chars) ✅
-- **URL**: `https://iversel.com/pricing`
+- **URL**: `https://iversel.netlify.app/pricing`
 - **Canonical**: ✅
 
 ### 6. **Contact Page**
 - **Title**: "Contact iversel - Get AI Automation Support" (45 chars) ✅
 - **Description**: "Get in touch with our AI automation experts. We're here to help you find the perfect solution and answer all your questions about AI implementation." (151 chars) ✅
-- **URL**: `https://iversel.com/contact`
+- **URL**: `https://iversel.netlify.app/contact`
 - **Canonical**: ✅
 
 ### 7. **Careers Page**
 - **Title**: "Careers at iversel - Join Our AI Automation Team" (50 chars) ✅
 - **Description**: "Join iversel and help democratize AI automation. Explore exciting career opportunities in AI, engineering, and business development with our growing team." (155 chars) ✅
-- **URL**: `https://iversel.com/careers`
+- **URL**: `https://iversel.netlify.app/careers`
 - **Canonical**: ✅
 
 ### 8. **Privacy Policy**
 - **Title**: "Privacy Policy - How iversel Protects Your Data" (49 chars) ✅
 - **Description**: "Read iversel's privacy policy to understand how we collect, use, and protect your personal information. Your data security is our top priority." (144 chars) ✅
-- **URL**: `https://iversel.com/privacy`
+- **URL**: `https://iversel.netlify.app/privacy`
 - **Canonical**: ✅
 
 ### 9. **Terms of Service**
 - **Title**: "Terms of Service - iversel Usage Agreement" (44 chars) ✅
 - **Description**: "Review iversel's terms of service and usage agreement. Understand your rights and responsibilities when using our AI automation platform." (138 chars) ✅
-- **URL**: `https://iversel.com/terms`
+- **URL**: `https://iversel.netlify.app/terms`
 - **Canonical**: ✅
 
 ### 10. **Cookie Policy**
 - **Title**: "Cookie Policy - How iversel Uses Cookies" (42 chars) ✅
 - **Description**: "Learn about iversel's cookie policy and how we use cookies to improve your experience. Control your cookie preferences and understand data tracking." (150 chars) ✅
-- **URL**: `https://iversel.com/cookies`
+- **URL**: `https://iversel.netlify.app/cookies`
 - **Canonical**: ✅
 
 ---
@@ -75,55 +75,55 @@ Complete verification that every page on the website has unique, SEO-optimized m
 ### 11. **5 Ways AI Automation Saves Your Business Money**
 - **Title**: "5 Ways AI Automation Saves Your Business Money" (51 chars) ✅
 - **Description**: "Discover five proven ways AI automation reduces operational costs and improves your bottom line. Real examples and ROI calculations included." (142 chars) ✅
-- **URL**: `https://iversel.com/blog/5-ways-ai-automation-saves-money`
+- **URL**: `https://iversel.netlify.app/blog/5-ways-ai-automation-saves-money`
 - **Canonical**: ✅
 
 ### 12. **What is an AI Agent? Complete Guide for Business**
 - **Title**: "What is an AI Agent? Complete Guide for Business" (50 chars) ✅
 - **Description**: "Learn what AI agents are, how they work, and how they can transform your business operations. A comprehensive guide for business owners." (138 chars) ✅
-- **URL**: `https://iversel.com/blog/what-is-an-ai-agent`
+- **URL**: `https://iversel.netlify.app/blog/what-is-an-ai-agent`
 - **Canonical**: ✅
 
 ### 13. **5 Signs Your Business is Ready for AI Automation**
 - **Title**: "5 Signs Your Business is Ready for AI Automation" (50 chars) ✅
 - **Description**: "Discover five clear indicators that your business would benefit from AI automation and learn the exact next steps to take for successful implementation." (155 chars) ✅
-- **URL**: `https://iversel.com/blog/signs-your-business-is-ready-for-ai-automation`
+- **URL**: `https://iversel.netlify.app/blog/signs-your-business-is-ready-for-ai-automation`
 - **Canonical**: ✅
 
 ### 14. **Pre-Built vs Custom AI: Best Choice for Small Business**
 - **Title**: "Pre-Built vs Custom AI: Best Choice for Small Business" (56 chars) ✅
 - **Description**: "Should you build custom AI or buy pre-built solutions? An honest cost comparison and decision framework for small business owners choosing AI automation." (155 chars) ✅
-- **URL**: `https://iversel.com/blog/ai-automation-for-small-businesses`
+- **URL**: `https://iversel.netlify.app/blog/ai-automation-for-small-businesses`
 - **Canonical**: ✅
 
 ### 15. **Automate Customer Support Without Losing Human Touch**
 - **Title**: "Automate Customer Support Without Losing Human Touch" (54 chars) ✅
 - **Description**: "A practical guide to implementing AI customer support that improves response times while maintaining personal, empathetic service your customers love." (151 chars) ✅
-- **URL**: `https://iversel.com/blog/how-to-automate-customer-support`
+- **URL**: `https://iversel.netlify.app/blog/how-to-automate-customer-support`
 - **Canonical**: ✅
 
 ### 16. **Real Cost of Manual Processes: ROI Calculator**
 - **Title**: "Real Cost of Manual Processes: ROI Calculator" (47 chars) ✅
 - **Description**: "Discover the hidden costs of manual work in your business and calculate exactly how much automation could save you. Includes free ROI calculator tool." (153 chars) ✅
-- **URL**: `https://iversel.com/blog/the-real-cost-of-manual-processes`
+- **URL**: `https://iversel.netlify.app/blog/the-real-cost-of-manual-processes`
 - **Canonical**: ✅
 
 ### 17. **Too Small for AI? Why This Myth Costs You Money**
 - **Title**: "Too Small for AI? Why This Myth Costs You Money" (49 chars) ✅
 - **Description**: "Small businesses often believe AI automation is only for enterprises. Discover why that mindset is leaving thousands of dollars on the table monthly." (151 chars) ✅
-- **URL**: `https://iversel.com/blog/we-are-too-small-for-ai`
+- **URL**: `https://iversel.netlify.app/blog/we-are-too-small-for-ai`
 - **Canonical**: ✅
 
 ### 18. **AI Automation Explained: Behind the Scenes Guide**
 - **Title**: "AI Automation Explained: Behind the Scenes Guide" (50 chars) ✅
 - **Description**: "A transparent look at how AI automation actually works behind the scenes. Demystify the technology and understand the deployment process step-by-step." (151 chars) ✅
-- **URL**: `https://iversel.com/blog/ai-automation-explained`
+- **URL**: `https://iversel.netlify.app/blog/ai-automation-explained`
 - **Canonical**: ✅
 
 ### 19. **AI Automation for E-commerce: 7 Tasks to Automate**
 - **Title**: "AI Automation for E-commerce: 7 Tasks to Automate" (51 chars) ✅
 - **Description**: "A practical checklist of seven high-impact e-commerce tasks perfect for AI automation. Includes step-by-step implementation guides for each task." (146 chars) ✅
-- **URL**: `https://iversel.com/blog/ai-automation-for-acommerce`
+- **URL**: `https://iversel.netlify.app/blog/ai-automation-for-acommerce`
 - **Canonical**: ✅
 
 ---
@@ -133,19 +133,19 @@ Complete verification that every page on the website has unique, SEO-optimized m
 ### 20. **AI Support Agent**
 - **Title**: From MDX frontmatter (unique per solution)
 - **Description**: Auto-optimized to 125-155 chars
-- **URL**: `https://iversel.com/solutions/ai-support-agent`
+- **URL**: `https://iversel.netlify.app/solutions/ai-support-agent`
 - **Canonical**: ✅
 
 ### 21. **Email Automation Agent**
 - **Title**: From MDX frontmatter (unique per solution)
 - **Description**: Auto-optimized to 125-155 chars
-- **URL**: `https://iversel.com/solutions/email-automation-agent`
+- **URL**: `https://iversel.netlify.app/solutions/email-automation-agent`
 - **Canonical**: ✅
 
 ### 22. **Business Analytics AI**
 - **Title**: From MDX frontmatter (unique per solution)
 - **Description**: Auto-optimized to 125-155 chars
-- **URL**: `https://iversel.com/solutions/business-analytics-ai`
+- **URL**: `https://iversel.netlify.app/solutions/business-analytics-ai`
 - **Canonical**: ✅
 
 ---

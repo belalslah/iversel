@@ -108,7 +108,7 @@ import Script from 'next/script'
 
 ### 1. Verify Installation (After Deploy)
 ```
-1. Visit your website: https://iversel.com
+1. Visit your website: https://iversel.netlify.app
 2. Open Google Analytics
 3. Go to "Realtime" report
 4. You should see your visit appear within seconds
@@ -335,7 +335,7 @@ git push
 ```
 
 After deployment (2-3 minutes):
-1. Visit https://iversel.com
+1. Visit https://iversel.netlify.app
 2. Open https://analytics.google.com
 3. Go to Realtime report
 4. See your visit appear! 🎉

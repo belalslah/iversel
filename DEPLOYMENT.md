@@ -108,7 +108,7 @@ Netlify will auto-detect Next.js. Verify these settings:
 
 1. Go to **Site settings** → **Domain management**
 2. Click **"Add custom domain"**
-3. Enter your domain: `iversel.com`
+3. Enter your domain: `iversel.netlify.app`
 4. Follow DNS configuration instructions
 5. Wait for DNS propagation (up to 48 hours)
 
@@ -235,7 +235,7 @@ No environment variables are required for the basic setup. If you add external A
 
 ```env
 # Example
-NEXT_PUBLIC_SITE_URL=https://iversel.com
+NEXT_PUBLIC_SITE_URL=https://iversel.netlify.app
 ```
 
 ## Custom Domain

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'AI Automation Blog - Tips, Guides & Best Practices',
   description: 'Expert insights on AI automation, implementation guides, and proven strategies to transform your business with artificial intelligence technology.',
   alternates: {
-    canonical: 'https://iversel.com/blog',
+    canonical: 'https://iversel.netlify.app/blog',
   },
 }
 

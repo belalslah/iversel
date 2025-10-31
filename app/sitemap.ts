@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllSlugs } from '@/lib/mdx-utils'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://iversel.com'
+  const baseUrl = 'https://iversel.netlify.app'
   
   // Get all solution and blog slugs
   const solutionSlugs = getAllSlugs('solutions')

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Terms of Service - iversel Usage Agreement',
   description: 'Review iversel\'s terms of service and usage agreement. Understand your rights and responsibilities when using our AI automation platform.',
   alternates: {
-    canonical: 'https://iversel.com/terms',
+    canonical: 'https://iversel.netlify.app/terms',
   },
 }
 

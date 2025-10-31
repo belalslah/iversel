@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'About iversel - Making AI Automation Accessible',
   description: 'Discover iversel\'s mission to democratize AI automation. We make enterprise-grade AI solutions affordable and accessible for businesses of all sizes.',
   alternates: {
-    canonical: 'https://iversel.com/about',
+    canonical: 'https://iversel.netlify.app/about',
   },
 }
 

@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: post.metadata.title,
     description: description,
     alternates: {
-      canonical: `https://iversel.com/blog/${slug}`,
+      canonical: `https://iversel.netlify.app/blog/${slug}`,
     },
   }
 }

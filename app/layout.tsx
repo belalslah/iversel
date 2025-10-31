@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   description: 'Transform your business with AI automation starting at $30. Deploy powerful AI agents in minutes. Enterprise-grade solutions made accessible.',
   authors: [{ name: 'iversel' }],
-  metadataBase: new URL('https://iversel.com'),
+  metadataBase: new URL('https://iversel.netlify.app'),
   alternates: {
-    canonical: 'https://iversel.com',
+    canonical: 'https://iversel.netlify.app',
   },
   verification: {
     google: 'wuaEY7vRuFYdfRzLbcJZNjKBSYl_BScllRXWlBhN0ag',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://iversel.com',
+    url: 'https://iversel.netlify.app',
     siteName: 'iversel',
     title: 'iversel - AI Automation Solutions',
     description: 'Discover powerful AI agents and automation solutions starting from just $30.',

@@ -24,62 +24,62 @@ Complete SEO optimization across all pages with canonical tags, optimized titles
 ### 1. Homepage
 - **Title**: "iversel - AI Automation Solutions for Business" (49 chars)
 - **Description**: "Transform your business with AI automation starting at $30. Deploy powerful AI agents in minutes. Enterprise-grade solutions made accessible." (143 chars)
-- **Canonical**: https://iversel.com
+- **Canonical**: https://iversel.netlify.app
 
 ### 2. About Page
 - **Title**: "About iversel - Making AI Automation Accessible" (48 chars)
 - **Description**: "Discover iversel's mission to democratize AI automation. We make enterprise-grade AI solutions affordable and accessible for businesses of all sizes." (151 chars)
-- **Canonical**: https://iversel.com/about
+- **Canonical**: https://iversel.netlify.app/about
 
 ### 3. Blog List Page
 - **Title**: "AI Automation Blog - Tips, Guides & Best Practices" (52 chars)
 - **Description**: "Expert insights on AI automation, implementation guides, and proven strategies to transform your business with artificial intelligence technology." (147 chars)
-- **Canonical**: https://iversel.com/blog
+- **Canonical**: https://iversel.netlify.app/blog
 
 ### 4. Blog Post Pages (Dynamic)
 - **Title**: From MDX frontmatter
 - **Description**: Auto-adjusted to 125-155 chars
-- **Canonical**: https://iversel.com/blog/[slug]
+- **Canonical**: https://iversel.netlify.app/blog/[slug]
 
 ### 5. Solutions List Page
 - **Title**: "AI Solutions - Pre-Built Agents & Automation Tools" (52 chars)
 - **Description**: "Browse our library of ready-to-deploy AI agents and automation solutions. Find the perfect AI tool to streamline your business operations today." (146 chars)
-- **Canonical**: https://iversel.com/solutions
+- **Canonical**: https://iversel.netlify.app/solutions
 
 ### 6. Solution Detail Pages (Dynamic)
 - **Title**: From MDX frontmatter
 - **Description**: Auto-adjusted to 125-155 chars
-- **Canonical**: https://iversel.com/solutions/[slug]
+- **Canonical**: https://iversel.netlify.app/solutions/[slug]
 
 ### 7. Pricing Page
 - **Title**: "Pricing - Affordable AI Automation Plans from $30" (51 chars)
 - **Description**: "Transparent pricing for AI automation solutions starting at just $30. Choose the perfect plan for your business with no hidden fees or surprises." (146 chars)
-- **Canonical**: https://iversel.com/pricing
+- **Canonical**: https://iversel.netlify.app/pricing
 
 ### 8. Contact Page
 - **Title**: "Contact iversel - Get AI Automation Support" (45 chars)
 - **Description**: "Get in touch with our AI automation experts. We're here to help you find the perfect solution and answer all your questions about AI implementation." (151 chars)
-- **Canonical**: https://iversel.com/contact
+- **Canonical**: https://iversel.netlify.app/contact
 
 ### 9. Careers Page
 - **Title**: "Careers at iversel - Join Our AI Automation Team" (50 chars)
 - **Description**: "Join iversel and help democratize AI automation. Explore exciting career opportunities in AI, engineering, and business development with our growing team." (155 chars)
-- **Canonical**: https://iversel.com/careers
+- **Canonical**: https://iversel.netlify.app/careers
 
 ### 10. Privacy Policy
 - **Title**: "Privacy Policy - How iversel Protects Your Data" (49 chars)
 - **Description**: "Read iversel's privacy policy to understand how we collect, use, and protect your personal information. Your data security is our top priority." (144 chars)
-- **Canonical**: https://iversel.com/privacy
+- **Canonical**: https://iversel.netlify.app/privacy
 
 ### 11. Terms of Service
 - **Title**: "Terms of Service - iversel Usage Agreement" (44 chars)
 - **Description**: "Review iversel's terms of service and usage agreement. Understand your rights and responsibilities when using our AI automation platform." (138 chars)
-- **Canonical**: https://iversel.com/terms
+- **Canonical**: https://iversel.netlify.app/terms
 
 ### 12. Cookie Policy
 - **Title**: "Cookie Policy - How iversel Uses Cookies" (42 chars)
 - **Description**: "Learn about iversel's cookie policy and how we use cookies to improve your experience. Control your cookie preferences and understand data tracking." (150 chars)
-- **Canonical**: https://iversel.com/cookies
+- **Canonical**: https://iversel.netlify.app/cookies
 
 ---
 
@@ -120,7 +120,7 @@ Current configuration:
 ```
 User-agent: *
 Allow: /
-Sitemap: https://iversel.com/sitemap.xml
+Sitemap: https://iversel.netlify.app/sitemap.xml
 ```
 
 ✅ All pages are crawlable
@@ -139,7 +139,7 @@ Sitemap: https://iversel.com/sitemap.xml
 1. Push changes to GitHub
 2. Wait for Netlify deployment
 3. Verify ownership in Google Search Console
-4. Submit sitemap: `https://iversel.com/sitemap.xml`
+4. Submit sitemap: `https://iversel.netlify.app/sitemap.xml`
 
 ---
 

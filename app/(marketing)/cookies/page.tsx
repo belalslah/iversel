@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Cookie Policy - How iversel Uses Cookies',
   description: 'Learn about iversel\'s cookie policy and how we use cookies to improve your experience. Control your cookie preferences and understand data tracking.',
   alternates: {
-    canonical: 'https://iversel.com/cookies',
+    canonical: 'https://iversel.netlify.app/cookies',
   },
 }
 

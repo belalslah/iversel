@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Careers at iversel - Join Our AI Automation Team',
   description: 'Join iversel and help democratize AI automation. Explore exciting career opportunities in AI, engineering, and business development with our growing team.',
   alternates: {
-    canonical: 'https://iversel.com/careers',
+    canonical: 'https://iversel.netlify.app/careers',
   },
 }
 

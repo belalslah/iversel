@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Privacy Policy - How iversel Protects Your Data',
   description: 'Read iversel\'s privacy policy to understand how we collect, use, and protect your personal information. Your data security is our top priority.',
   alternates: {
-    canonical: 'https://iversel.com/privacy',
+    canonical: 'https://iversel.netlify.app/privacy',
   },
 }
 

@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://iversel.com/sitemap.xml',
+    sitemap: 'https://iversel.netlify.app/sitemap.xml',
   }
 }

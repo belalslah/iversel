@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'AI Solutions - Pre-Built Agents & Automation Tools',
   description: 'Browse our library of ready-to-deploy AI agents and automation solutions. Find the perfect AI tool to streamline your business operations today.',
   alternates: {
-    canonical: 'https://iversel.com/solutions',
+    canonical: 'https://iversel.netlify.app/solutions',
   },
 }
 
