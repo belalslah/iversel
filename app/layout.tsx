@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   description: 'Discover powerful AI agents and automation solutions starting from just $30. Accessible AI for everyone.',
   authors: [{ name: 'iversel' }],
   metadataBase: new URL('https://iversel.com'),
+  verification: {
+    google: 'wuaEY7vRuFYdfRzLbcJZNjKBSYl_BScllRXWlBhN0ag',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',

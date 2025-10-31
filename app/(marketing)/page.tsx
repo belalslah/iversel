@@ -3,7 +3,7 @@ import HeroSection from '@/components/home/HeroSection'
 
 // Dynamically import below-the-fold components for better performance
 const FeaturedSolutions = dynamic(() => import('@/components/home/FeaturedSolutions'), {
-  loading: () => <div className="h-96 bg-gray-50" />,
+  loading: () => <div className="h-96 bg-gray-100" />
 })
 
 const HowItWorks = dynamic(() => import('@/components/home/HowItWorks'), {
@@ -11,7 +11,7 @@ const HowItWorks = dynamic(() => import('@/components/home/HowItWorks'), {
 })
 
 const Testimonials = dynamic(() => import('@/components/home/Testimonials'), {
-  loading: () => <div className="h-96 bg-gray-50" />,
+  loading: () => <div className="h-96 bg-gray-100" />
 })
 
 const CTASection = dynamic(() => import('@/components/home/CTASection'), {

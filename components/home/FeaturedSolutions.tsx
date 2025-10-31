@@ -31,7 +31,7 @@ const featuredSolutions = [
 
 export default function FeaturedSolutions() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">

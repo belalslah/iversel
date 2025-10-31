@@ -3,7 +3,7 @@ import { Sparkles, Zap, TrendingUp } from 'lucide-react'
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-b from-white to-gray-50 py-20 sm:py-32">
+    <section className="relative bg-gradient-to-b from-gray-100 to-gray-200 py-20 sm:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           {/* Headline */}
@@ -32,7 +32,7 @@ export default function HeroSection() {
           {/* Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-20">
             <div className="flex flex-col items-center text-center">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 shadow-md">
                 <Zap className="w-6 h-6 text-primary-600" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Lightning Fast</h3>
@@ -40,7 +40,7 @@ export default function HeroSection() {
             </div>
             
             <div className="flex flex-col items-center text-center">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 shadow-md">
                 <Sparkles className="w-6 h-6 text-primary-600" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Affordable</h3>
@@ -48,7 +48,7 @@ export default function HeroSection() {
             </div>
             
             <div className="flex flex-col items-center text-center">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 shadow-md">
                 <TrendingUp className="w-6 h-6 text-primary-600" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Scalable</h3>

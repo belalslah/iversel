@@ -46,14 +46,14 @@ export default function HowItWorks() {
                   <div className="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-primary-200" />
                 )}
                 
-                <div className="relative bg-white rounded-lg p-8 shadow-sm border border-gray-200">
+                <div className="relative bg-white rounded-lg p-8 shadow-lg border border-gray-200">
                   {/* Number Badge */}
                   <div className="absolute -top-4 -left-4 w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
                     {step.number}
                   </div>
                   
                   {/* Icon */}
-                  <div className="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-6 mt-2">
+                  <div className="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-6 mt-2 shadow-md">
                     <Icon className="w-7 h-7 text-primary-600" />
                   </div>
                   

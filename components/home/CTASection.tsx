@@ -16,7 +16,7 @@ export default function CTASection() {
             href="/solutions" 
             variant="secondary" 
             size="lg"
-            className="bg-white text-primary-600 hover:bg-gray-50"
+            className="bg-white text-primary-600 hover:bg-gray-50 shadow-lg hover:shadow-xl"
           >
             Get Started Today
             <ArrowRight className="w-5 h-5 ml-2" />
