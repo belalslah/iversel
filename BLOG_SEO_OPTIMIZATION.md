@@ -47,7 +47,7 @@ Each blog post automatically gets the correct canonical URL: `https://iversel.ne
 
 ### 4. **Pre-Built vs Custom AI: Best Choice for Small Business**
 - **Slug**: `ai-automation-for-small-businesses`
-- **Title**: "Pre-Built vs Custom AI: Best Choice for Small Business" (56 chars) ✅
+- **Title**: "Pre-Built vs Custom AI:Best for Small Business" (56 chars) ✅
 - **Description**: "Should you build custom AI or buy pre-built solutions? An honest cost comparison and decision framework for small business owners choosing AI automation." (155 chars) ✅
 - **Canonical**: `https://iversel.netlify.app/blog/ai-automation-for-small-businesses`
 - **Date**: 2025-01-22
