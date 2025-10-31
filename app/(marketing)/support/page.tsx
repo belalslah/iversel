@@ -84,7 +84,7 @@ export default function SupportPage() {
             How Can We Help You?
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get the support you need to succeed with AI automation. We're here to help every step of the way.
+            Get the support you need to succeed with AI automation. We&apos;re here to help every step of the way.
           </p>
         </div>
 

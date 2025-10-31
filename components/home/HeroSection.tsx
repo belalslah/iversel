@@ -8,7 +8,7 @@ export default function HeroSection() {
         <div className="text-center">
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight mb-6">
-            Smarter AI Automation.
+            Smarter AI Solutions.
             <br />
             <span className="text-primary-600">Simple Pricing.</span>
           </h1>
