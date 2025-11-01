@@ -3,8 +3,8 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy - How iversel Uses Cookies',
-  description: 'Learn about iversel\'s cookie policy and how we use cookies to improve your experience. Control your cookie preferences and understand data tracking.',
+  title: 'Cookie Policy - How IVERSEL Uses Cookies',
+  description: 'Learn about IVERSEL\'s cookie policy and how we use cookies to improve your experience. Control your cookie preferences and understand data tracking.',
   alternates: {
     canonical: 'https://iversel.netlify.app/cookies',
   },
@@ -42,7 +42,7 @@ export default function CookiesPage() {
                 widely used to make websites work more efficiently and provide information to website owners.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                This Cookie Policy explains how iversel uses cookies and similar tracking technologies on our 
+                This Cookie Policy explains how IVERSEL uses cookies and similar tracking technologies on our 
                 website and services.
               </p>
             </section>

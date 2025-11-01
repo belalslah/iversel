@@ -32,7 +32,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-primary-600">iversel</span>
+            <span className="text-2xl font-bold text-primary-600">IVERSEL</span>
           </Link>
           
           {/* Desktop Navigation Links */}

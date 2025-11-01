@@ -3,8 +3,8 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service - iversel Usage Agreement',
-  description: 'Review iversel\'s terms of service and usage agreement. Understand your rights and responsibilities when using our AI automation platform.',
+  title: 'Terms of Service - IVERSEL Usage Agreement',
+  description: 'Review IVERSEL\'s terms of service and usage agreement. Understand your rights and responsibilities when using our AI automation platform.',
   alternates: {
     canonical: 'https://iversel.netlify.app/terms',
   },
@@ -38,7 +38,7 @@ export default function TermsPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Agreement to Terms</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                These Terms of Service (&quot;Terms&quot;) govern your access to and use of iversel&apos;s website, 
+                These Terms of Service (&quot;Terms&quot;) govern your access to and use of IVERSEL&apos;s website, 
                 products, and services (collectively, the &quot;Services&quot;). By accessing or using our Services, 
                 you agree to be bound by these Terms.
               </p>
@@ -133,7 +133,7 @@ export default function TermsPage() {
               
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Our Property</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                The Services and all content, features, and functionality are owned by iversel and are protected 
+                The Services and all content, features, and functionality are owned by IVERSEL and are protected 
                 by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, 
                 or create derivative works without our express written permission.
               </p>
@@ -178,7 +178,7 @@ export default function TermsPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Indemnification</h2>
               <p className="text-gray-700 leading-relaxed">
-                You agree to indemnify and hold harmless iversel and its officers, directors, employees, and agents 
+                You agree to indemnify and hold harmless IVERSEL and its officers, directors, employees, and agents 
                 from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from your 
                 use of the Services or violation of these Terms.
               </p>
@@ -201,7 +201,7 @@ export default function TermsPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Governing Law</h2>
               <p className="text-gray-700 leading-relaxed">
                 These Terms shall be governed by and construed in accordance with the laws of the jurisdiction 
-                in which iversel operates, without regard to its conflict of law provisions.
+                in which IVERSEL operates, without regard to its conflict of law provisions.
               </p>
             </section>
 

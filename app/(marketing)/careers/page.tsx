@@ -5,8 +5,8 @@ import { Briefcase, Users, Zap, Heart, TrendingUp, Globe } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Careers at iversel - Join Our AI Automation Team',
-  description: 'Join iversel and help democratize AI automation. Explore exciting career opportunities in AI, engineering, and business development with our growing team.',
+  title: 'Careers at IVERSEL - Join Our AI Automation Team',
+  description: 'Join IVERSEL and help democratize AI automation. Explore exciting career opportunities in AI, engineering, and business development with our growing team.',
   alternates: {
     canonical: 'https://iversel.netlify.app/careers',
   },
@@ -98,9 +98,9 @@ export default function CareersPage() {
         {/* Why Join Us */}
         <Card className="p-12 mb-16 bg-gradient-to-r from-primary-50 to-primary-100 border-primary-200">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Why iversel?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Why IVERSEL?</h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              At iversel, you&apos;ll be part of a team that&apos;s revolutionizing how businesses use AI. 
+              At IVERSEL, you&apos;ll be part of a team that&apos;s revolutionizing how businesses use AI. 
               We&apos;re not just building products - we&apos;re democratizing access to enterprise-grade 
               AI automation.
             </p>
@@ -200,7 +200,7 @@ export default function CareersPage() {
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             We&apos;re always looking for talented people. Send us your resume and tell us why 
-            you&apos;d be a great fit for iversel.
+            you&apos;d be a great fit for IVERSEL.
           </p>
           <Button href="/contact" size="lg">
             Get in Touch

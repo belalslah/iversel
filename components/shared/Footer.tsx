@@ -102,7 +102,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-200">
           <p className="text-center text-gray-500 text-sm">
-            © {currentYear} iversel. All rights reserved.
+            © {currentYear} IVERSEL. All rights reserved.
           </p>
         </div>
       </div>

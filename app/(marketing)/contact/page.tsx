@@ -5,7 +5,7 @@ import { Mail, MessageSquare, Clock, MapPin } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact iversel - Get AI Automation Support',
+  title: 'Contact IVERSEL - Get AI Automation Support',
   description: 'Get in touch with our AI automation experts. We\'re here to help you find the perfect solution and answer all your questions about AI implementation.',
   alternates: {
     canonical: 'https://iversel.netlify.app/contact',
