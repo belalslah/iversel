@@ -14,16 +14,17 @@ export const metadata: Metadata = {
 }
 
 type BlogPageProps = {
-  searchParams?: {
-    page?: string
-  }
+  searchParams?: Promise<Record<string, string | string[] | undefined>>
 }
 
-export default function BlogPage({ searchParams }: BlogPageProps) {
+export default async function BlogPage({ searchParams }: BlogPageProps) {
   const posts = getPosts('blog')
   const postsPerPage = 9
   const totalPages = Math.max(1, Math.ceil(posts.length / postsPerPage))
-  const parsedPage = Number.parseInt(searchParams?.page ?? '1', 10)
+  const resolvedSearchParams: Record<string, string | string[] | undefined> = (await searchParams) ?? {}
+  const pageParam = resolvedSearchParams.page
+  const normalizedPageParam = Array.isArray(pageParam) ? pageParam[0] : pageParam
+  const parsedPage = Number.parseInt(normalizedPageParam ?? '1', 10)
   const rawPage = Number.isNaN(parsedPage) ? 1 : parsedPage
   const currentPage = Math.min(Math.max(rawPage, 1), totalPages)
   const startIndex = (currentPage - 1) * postsPerPage
