@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Facebook, Linkedin, Instagram, MessageCircle } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -100,10 +101,52 @@ export default function Footer() {
         </div>
         
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-gray-200">
-          <p className="text-center text-gray-500 text-sm">
+        <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col items-center gap-6 md:flex-row md:justify-between">
+          <p className="text-gray-500 text-sm text-center md:text-left">
             © {currentYear} IVERSEL. All rights reserved.
           </p>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <a
+              href="https://www.facebook.com/share/17ZHusZ5Jp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="IVERSEL on Facebook"
+              className="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-primary-200 hover:bg-primary-50 hover:text-primary-600"
+            >
+              <Facebook className="h-4 w-4" />
+              Facebook
+            </a>
+            <a
+              href="https://www.linkedin.com/in/belal-abu-khadija-9a591730b"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Belal Abu Khadija on LinkedIn"
+              className="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-primary-200 hover:bg-primary-50 hover:text-primary-600"
+            >
+              <Linkedin className="h-4 w-4" />
+              LinkedIn
+            </a>
+            <a
+              href="https://www.instagram.com/belal_abukhadija?igsh=MW5lcjd1NDlub29lMQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Belal Abu Khadija on Instagram"
+              className="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-primary-200 hover:bg-primary-50 hover:text-primary-600"
+            >
+              <Instagram className="h-4 w-4" />
+              Instagram
+            </a>
+            <a
+              href="https://wa.me/962789752515"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat on WhatsApp"
+              className="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-primary-200 hover:bg-primary-50 hover:text-primary-600"
+            >
+              <MessageCircle className="h-4 w-4" />
+              WhatsApp
+            </a>
+          </div>
         </div>
       </div>
     </footer>

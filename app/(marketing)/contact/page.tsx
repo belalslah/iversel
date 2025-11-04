@@ -1,7 +1,7 @@
 import Card from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
-import { Mail, MessageSquare, Clock, MapPin } from 'lucide-react'
+import { Mail, MessageSquare, Clock, Facebook, Linkedin, Instagram, MessageCircle } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -181,6 +181,53 @@ export default function ContactPage() {
                     We typically respond within 24 hours on business days.
                   </p>
                 </div>
+              </div>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="font-semibold text-gray-900 mb-3">Connect With Us</h3>
+              <p className="text-gray-600 text-sm mb-4">Follow our latest updates and reach out directly on your preferred platform.</p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://www.facebook.com/share/17ZHusZ5Jp/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="IVERSEL on Facebook"
+                  className="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-primary-200 hover:bg-primary-50 hover:text-primary-600"
+                >
+                  <Facebook className="h-4 w-4" />
+                  Facebook
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/belal-abu-khadija-9a591730b"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Belal Abu Khadija on LinkedIn"
+                  className="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-primary-200 hover:bg-primary-50 hover:text-primary-600"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  LinkedIn
+                </a>
+                <a
+                  href="https://www.instagram.com/belal_abukhadija?igsh=MW5lcjd1NDlub29lMQ=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Belal Abu Khadija on Instagram"
+                  className="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-primary-200 hover:bg-primary-50 hover:text-primary-600"
+                >
+                  <Instagram className="h-4 w-4" />
+                  Instagram
+                </a>
+                <a
+                  href="https://wa.me/962789752515"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Chat on WhatsApp"
+                  className="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-primary-200 hover:bg-primary-50 hover:text-primary-600"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                  WhatsApp
+                </a>
               </div>
             </Card>
 

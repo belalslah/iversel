@@ -38,8 +38,9 @@ export default function SolutionCard({
       <Link 
         href={`/solutions/${slug}`}
         className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium group"
+        aria-label={`Explore ${title} solution details`}
       >
-        Learn More
+        Explore {title}
         <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
       </Link>
     </Card>

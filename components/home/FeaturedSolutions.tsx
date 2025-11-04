@@ -70,8 +70,8 @@ export default function FeaturedSolutions() {
                     <span className="text-sm text-gray-500">Starts at</span>
                     <p className="text-2xl font-bold text-gray-900 font-mono">${solution.price}</p>
                   </div>
-                  <Button href={`/solutions/${solution.slug}`} size="sm">
-                    Learn More
+                  <Button href={`/solutions/${solution.slug}`} size="sm" aria-label={`View details for ${solution.title}`}>
+                    View {solution.title}
                   </Button>
                 </div>
               </Card>
