@@ -9,6 +9,7 @@ interface ButtonProps {
   onClick?: () => void
   className?: string
   type?: 'button' | 'submit' | 'reset'
+  id?: string
 }
 
 export default function Button({
@@ -19,6 +20,7 @@ export default function Button({
   onClick,
   className = '',
   type = 'button',
+  id,
 }: ButtonProps) {
   const baseStyles = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2'
   
@@ -38,14 +40,14 @@ export default function Button({
   
   if (href) {
     return (
-      <Link href={href} className={classes}>
+      <Link id={id} href={href} className={classes}>
         {children}
       </Link>
     )
   }
   
   return (
-    <button type={type} onClick={onClick} className={classes}>
+    <button id={id} type={type} onClick={onClick} className={classes}>
       {children}
     </button>
   )

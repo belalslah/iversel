@@ -14,22 +14,23 @@ export default function HeroSection() {
           </h1>
           
           {/* Subheadline */}
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10" aria-describedby="hero-primary-cta">
             Discover powerful AI agents and automation solutions starting from just $30. 
             Transform your business with accessible, enterprise-grade AI technology.
           </p>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button href="/solutions" size="lg">
-              Explore Solutions
+            <Button id="hero-primary-cta" href="/solutions" size="lg">
+              Explore AI Solutions
             </Button>
             <Button href="/pricing" variant="outline" size="lg">
-              See Pricing
+              Compare Pricing Plans
             </Button>
           </div>
           
           {/* Features Grid */}
+          <h2 className="sr-only">Key benefits of IVERSEL AI solutions</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-20">
             <div className="flex flex-col items-center text-center">
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 shadow-md">
