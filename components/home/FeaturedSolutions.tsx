@@ -71,7 +71,7 @@ export default function FeaturedSolutions() {
                     <p className="text-2xl font-bold text-gray-900 font-mono">${solution.price}</p>
                   </div>
                   <Button href={`/solutions/${solution.slug}`} size="sm" aria-label={`View details for ${solution.title}`}>
-                    View {solution.title}
+                    {solution.title}
                   </Button>
                 </div>
               </Card>

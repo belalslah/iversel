@@ -62,13 +62,6 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
               {paginatedPosts.map((post) => (
                 <Link key={post.slug} href={`/blog/${post.slug}`}>
                   <Card hover className="p-6 h-full flex flex-col">
-                    {/* Category */}
-                    {post.category && (
-                      <span className="inline-block text-sm font-medium text-primary-600 bg-primary-50 px-3 py-1 rounded-full mb-4 self-start">
-                        {post.category}
-                      </span>
-                    )}
-                    
                     {/* Title */}
                     <h2 className="text-xl font-bold text-gray-900 mb-3 hover:text-primary-600 transition-colors">
                       {post.title}

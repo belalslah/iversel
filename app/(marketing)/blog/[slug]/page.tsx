@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Card from '@/components/ui/Card'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
+import BackToBlogLink from '@/components/blog/BackToBlogLink'
 import { Calendar, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 import Markdown from 'markdown-to-jsx'
@@ -11,6 +12,13 @@ interface PageProps {
   params: Promise<{
     slug: string
   }>
+}
+
+function removeLeadingTitle(markdown: string, title: string) {
+  if (!title) return markdown
+  const escapedTitle = title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const pattern = new RegExp(`^\\s*#\\s+${escapedTitle}\\s*\\n+`, 'i')
+  return markdown.replace(pattern, '')
 }
 
 export async function generateStaticParams() {
@@ -55,6 +63,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   }
   
   const { metadata, content } = post
+  const sanitizedContent = removeLeadingTitle(content, metadata.title)
   
   return (
     <div className="py-20 bg-gray-100">
@@ -68,43 +77,35 @@ export default async function BlogPostPage({ params }: PageProps) {
           className="mb-6"
         />
         
-        {/* Back Link */}
-        <Link 
-          href="/blog"
-          className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 mb-8 font-medium"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Back to Blog
-        </Link>
-        
-        {/* Category Badge */}
-        {metadata.category && (
-          <span className="inline-block text-sm font-medium text-primary-600 bg-primary-50 px-3 py-1 rounded-full mb-4">
-            {metadata.category}
-          </span>
-        )}
-        
-        {/* Title */}
-        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-          {metadata.title}
-        </h1>
-        
-        {/* Meta */}
-        {metadata.date && (
-          <div className="flex items-center gap-2 text-gray-600 mb-12">
-            <Calendar className="w-5 h-5" />
-            <time dateTime={metadata.date}>
-              {new Date(metadata.date).toLocaleDateString('en-US', { 
-                month: 'long', 
-                day: 'numeric', 
-                year: 'numeric' 
-              })}
-            </time>
-          </div>
-        )}
+        <div className="flex flex-col gap-4 mb-10 sm:flex-row sm:items-center sm:justify-between">
+          {/* Back Link */}
+          <BackToBlogLink
+            className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Blog
+          </BackToBlogLink>
+
+          {/* Meta */}
+          {metadata.date && (
+            <div className="flex items-center gap-2 text-gray-600">
+              <Calendar className="w-5 h-5" />
+              <time dateTime={metadata.date}>
+                {new Date(metadata.date).toLocaleDateString('en-US', { 
+                  month: 'long', 
+                  day: 'numeric', 
+                  year: 'numeric' 
+                })}
+              </time>
+            </div>
+          )}
+        </div>
         
         {/* Content */}
         <Card className="p-8 lg:p-12">
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+            {metadata.title}
+          </h1>
           <div className="prose prose-lg prose-gray max-w-none
             prose-headings:text-gray-900 prose-headings:font-bold
             prose-h1:text-4xl prose-h1:mb-6
@@ -121,7 +122,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:p-4 prose-pre:rounded-lg prose-pre:overflow-x-auto
             prose-img:rounded-lg prose-img:shadow-md"
           >
-            <Markdown>{content}</Markdown>
+            <Markdown>{sanitizedContent}</Markdown>
           </div>
         </Card>
         
