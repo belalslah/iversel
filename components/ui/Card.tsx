@@ -10,7 +10,7 @@ export default function Card({ children, className = '', hover = false }: CardPr
   const hoverStyles = hover ? 'hover:shadow-xl hover:-translate-y-1 transition-all duration-300' : ''
   
   return (
-    <div className={`bg-white border border-gray-200 rounded-lg shadow-md ${hoverStyles} ${className}`}>
+    <div className={`bg-background-elevated border border-border-primary rounded-lg shadow-md ${hoverStyles} ${className}`}>
       {children}
     </div>
   )

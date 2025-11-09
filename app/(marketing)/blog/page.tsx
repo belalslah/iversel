@@ -35,7 +35,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
   const createPageHref = (page: number) => (page === 1 ? '/blog' : `/blog?page=${page}`)
   
   return (
-    <div className="py-20 bg-gray-100">
+    <div className="py-20 bg-background-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs */}
         <Breadcrumbs 
@@ -47,10 +47,10 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6">
             Blog
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
             Insights, guides, and best practices for AI automation and business growth.
           </p>
         </div>
@@ -60,22 +60,22 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
           <>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {paginatedPosts.map((post) => (
-                <Link key={post.slug} href={`/blog/${post.slug}`}>
+                <Link key={post.slug} href={`/blog/${post.slug}?page=${currentPage}`}>
                   <Card hover className="p-6 h-full flex flex-col">
                     {/* Title */}
-                    <h2 className="text-xl font-bold text-gray-900 mb-3 hover:text-primary-600 transition-colors">
+                    <h2 className="text-xl font-bold text-text-primary mb-3 hover:text-primary-400 transition-colors">
                       {post.title}
                     </h2>
                     
                     {/* Description */}
-                    <p className="text-gray-600 mb-4 flex-grow">
+                    <p className="text-text-secondary mb-4 flex-grow">
                       {post.description}
                     </p>
                     
                     {/* Meta */}
-                    <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between pt-4 border-t border-border-primary">
                       {post.date && (
-                        <div className="flex items-center gap-2 text-sm text-gray-500">
+                        <div className="flex items-center gap-2 text-sm text-text-tertiary">
                           <Calendar className="w-4 h-4" />
                           <span>{new Date(post.date).toLocaleDateString('en-US', { 
                             month: 'short', 
@@ -84,7 +84,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                           })}</span>
                         </div>
                       )}
-                      <div className="flex items-center gap-2 text-primary-600 font-medium group">
+                      <div className="flex items-center gap-2 text-primary-400 font-medium group">
                         <span>Read More</span>
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </div>
@@ -95,24 +95,24 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
             </div>
 
             <div className="mt-12 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-              <p className="text-sm text-gray-500 text-center sm:text-left">
+              <p className="text-sm text-text-tertiary text-center sm:text-left">
                 Showing {showingStart}-{showingEnd} of {posts.length} articles
               </p>
 
               {totalPages > 1 && (
                 <nav className="flex justify-center sm:justify-end" aria-label="Blog pagination">
-                  <ul className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm">
+                  <ul className="inline-flex items-center gap-2 rounded-full border border-border-primary bg-background-elevated px-3 py-2 shadow-sm">
                     <li>
                       {currentPage > 1 ? (
                         <Link
                           href={createPageHref(currentPage - 1)}
-                          className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-primary-50 hover:text-primary-600"
+                          className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-text-secondary transition-colors hover:bg-primary-900 hover:text-primary-400"
                         >
                           <ChevronLeft className="h-4 w-4" />
                           <span className="hidden sm:inline">Previous</span>
                         </Link>
                       ) : (
-                        <span className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-gray-300">
+                        <span className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-text-tertiary">
                           <ChevronLeft className="h-4 w-4" />
                           <span className="hidden sm:inline">Previous</span>
                         </span>
@@ -128,8 +128,8 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                             aria-current={isActive ? 'page' : undefined}
                             className={`inline-flex h-10 w-10 items-center justify-center rounded-full text-sm font-semibold transition-colors ${
                               isActive
-                                ? 'bg-primary-600 text-white shadow'
-                                : 'text-gray-600 hover:bg-primary-50 hover:text-primary-600'
+                                ? 'bg-primary-600 text-text-primary shadow'
+                                : 'text-text-secondary hover:bg-primary-900 hover:text-primary-400'
                             }`}
                           >
                             {page}
@@ -142,13 +142,13 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                       {currentPage < totalPages ? (
                         <Link
                           href={createPageHref(currentPage + 1)}
-                          className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-primary-50 hover:text-primary-600"
+                          className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-text-secondary transition-colors hover:bg-primary-900 hover:text-primary-400"
                         >
                           <span className="hidden sm:inline">Next</span>
                           <ChevronRight className="h-4 w-4" />
                         </Link>
                       ) : (
-                        <span className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-gray-300">
+                        <span className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-text-tertiary">
                           <span className="hidden sm:inline">Next</span>
                           <ChevronRight className="h-4 w-4" />
                         </span>
@@ -161,7 +161,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
           </>
         ) : (
           <div className="text-center py-12">
-            <p className="text-gray-600">No blog posts available yet. Check back soon!</p>
+            <p className="text-text-secondary">No blog posts available yet. Check back soon!</p>
           </div>
         )}
       </div>

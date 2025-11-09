@@ -5,7 +5,7 @@ import { Mail, MessageSquare, Clock, Facebook, Linkedin, Instagram, MessageCircl
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact IVERSEL - Get AI Automation Support',
+  title: 'Contact Kawkab AI - Get AI Automation Support',
   description: 'Get in touch with our AI automation experts. We\'re here to help you find the perfect solution and answer all your questions about AI implementation.',
   alternates: {
     canonical: 'https://iversel.netlify.app/contact',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="py-20 bg-gray-100">
+    <div className="py-20 bg-background-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs */}
         <Breadcrumbs 
@@ -26,10 +26,10 @@ export default function ContactPage() {
         
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6">
             Get in Touch
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
             Have questions? We&apos;re here to help you find the perfect AI automation solution for your business.
           </p>
         </div>
@@ -38,31 +38,31 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <Card className="p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+              <h2 className="text-2xl font-bold text-text-primary mb-6">Send us a Message</h2>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="firstName" className="block text-sm font-medium text-text-secondary mb-2">
                       First Name
                     </label>
                     <input
                       type="text"
                       id="firstName"
                       name="firstName"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      className="w-full px-4 py-3 bg-background-secondary border border-border-primary rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-text-primary"
                       placeholder="John"
                       required
                     />
                   </div>
                   <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="lastName" className="block text-sm font-medium text-text-secondary mb-2">
                       Last Name
                     </label>
                     <input
                       type="text"
                       id="lastName"
                       name="lastName"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      className="w-full px-4 py-3 bg-background-secondary border border-border-primary rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-text-primary"
                       placeholder="Doe"
                       required
                     />
@@ -70,40 +70,40 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-text-secondary mb-2">
                     Email Address
                   </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-background-secondary border border-border-primary rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-text-primary"
                     placeholder="john@example.com"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="company" className="block text-sm font-medium text-text-secondary mb-2">
                     Company Name (Optional)
                   </label>
                   <input
                     type="text"
                     id="company"
                     name="company"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-background-secondary border border-border-primary rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-text-primary"
                     placeholder="Your Company"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="subject" className="block text-sm font-medium text-text-secondary mb-2">
                     Subject
                   </label>
                   <select
                     id="subject"
                     name="subject"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-background-secondary border border-border-primary rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-text-primary"
                     required
                   >
                     <option value="">Select a subject</option>
@@ -115,14 +115,14 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-text-secondary mb-2">
                     Message
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     rows={6}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-background-secondary border border-border-primary rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-text-primary"
                     placeholder="Tell us about your needs..."
                     required
                   />
@@ -139,14 +139,14 @@ export default function ContactPage() {
           <div className="lg:col-span-1 space-y-6">
             <Card className="p-6">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-6 h-6 text-primary-600" />
+                <div className="w-12 h-12 bg-primary-800 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-6 h-6 text-primary-400" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Email Us</h3>
+                  <h3 className="font-semibold text-text-primary mb-2">Email Us</h3>
                   <a 
                     href="mailto:belalabukhadija97@gmail.com"
-                    className="text-primary-600 hover:text-primary-700 break-all"
+                    className="text-primary-400 hover:text-primary-300 break-all"
                   >
                     belalabukhadija97@gmail.com
                   </a>
@@ -156,12 +156,12 @@ export default function ContactPage() {
 
             <Card className="p-6">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MessageSquare className="w-6 h-6 text-primary-600" />
+                <div className="w-12 h-12 bg-primary-800 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MessageSquare className="w-6 h-6 text-primary-400" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Live Chat</h3>
-                  <p className="text-gray-600 text-sm">
+                  <h3 className="font-semibold text-text-primary mb-2">Live Chat</h3>
+                  <p className="text-text-secondary text-sm">
                     Available Monday - Friday
                     <br />
                     9:00 AM - 6:00 PM EST
@@ -172,12 +172,12 @@ export default function ContactPage() {
 
             <Card className="p-6">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-6 h-6 text-primary-600" />
+                <div className="w-12 h-12 bg-primary-800 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-6 h-6 text-primary-400" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Response Time</h3>
-                  <p className="text-gray-600 text-sm">
+                  <h3 className="font-semibold text-text-primary mb-2">Response Time</h3>
+                  <p className="text-text-secondary text-sm">
                     We typically respond within 24 hours on business days.
                   </p>
                 </div>
@@ -185,15 +185,15 @@ export default function ContactPage() {
             </Card>
 
             <Card className="p-6">
-              <h3 className="font-semibold text-gray-900 mb-3">Connect With Us</h3>
-              <p className="text-gray-600 text-sm mb-4">Follow our latest updates and reach out directly on your preferred platform.</p>
+              <h3 className="font-semibold text-text-primary mb-3">Connect With Us</h3>
+              <p className="text-text-secondary text-sm mb-4">Follow our latest updates and reach out directly on your preferred platform.</p>
               <div className="flex flex-wrap gap-3">
                 <a
                   href="https://www.facebook.com/share/17ZHusZ5Jp/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="IVERSEL on Facebook"
-                  className="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-primary-200 hover:bg-primary-50 hover:text-primary-600"
+                  aria-label="Kawkab AI on Facebook"
+                  className="flex items-center gap-2 rounded-full border border-border-primary px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:border-primary-500 hover:bg-primary-800 hover:text-primary-400"
                 >
                   <Facebook className="h-4 w-4" />
                   Facebook
@@ -203,7 +203,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Belal Abu Khadija on LinkedIn"
-                  className="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-primary-200 hover:bg-primary-50 hover:text-primary-600"
+                  className="flex items-center gap-2 rounded-full border border-border-primary px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:border-primary-500 hover:bg-primary-800 hover:text-primary-400"
                 >
                   <Linkedin className="h-4 w-4" />
                   LinkedIn
@@ -213,7 +213,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Belal Abu Khadija on Instagram"
-                  className="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-primary-200 hover:bg-primary-50 hover:text-primary-600"
+                  className="flex items-center gap-2 rounded-full border border-border-primary px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:border-primary-500 hover:bg-primary-800 hover:text-primary-400"
                 >
                   <Instagram className="h-4 w-4" />
                   Instagram
@@ -223,7 +223,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Chat on WhatsApp"
-                  className="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-primary-200 hover:bg-primary-50 hover:text-primary-600"
+                  className="flex items-center gap-2 rounded-full border border-border-primary px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:border-primary-500 hover:bg-primary-800 hover:text-primary-400"
                 >
                   <MessageCircle className="h-4 w-4" />
                   WhatsApp
@@ -231,9 +231,9 @@ export default function ContactPage() {
               </div>
             </Card>
 
-            <Card className="p-6 bg-gradient-to-br from-primary-50 to-primary-100 border-primary-200">
-              <h3 className="font-semibold text-gray-900 mb-3">Need Immediate Help?</h3>
-              <p className="text-gray-700 text-sm mb-4">
+            <Card className="p-6 bg-gradient-to-br from-primary-800 to-primary-700 border-primary-700">
+              <h3 className="font-semibold text-text-primary mb-3">Need Immediate Help?</h3>
+              <p className="text-text-secondary text-sm mb-4">
                 Check out our documentation and FAQ for quick answers to common questions.
               </p>
               <Button href="/support" variant="outline" size="sm" className="w-full">
@@ -245,35 +245,35 @@ export default function ContactPage() {
 
         {/* FAQ Section */}
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl font-bold text-text-primary text-center mb-12">
             Frequently Asked Questions
           </h2>
           <div className="space-y-6">
             <Card className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <h3 className="text-lg font-semibold text-text-primary mb-3">
                 How quickly can I get started?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-text-secondary">
                 Most of our solutions can be deployed within minutes. After purchase, you&apos;ll receive 
                 setup instructions and our team is available to help you get started.
               </p>
             </Card>
 
             <Card className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <h3 className="text-lg font-semibold text-text-primary mb-3">
                 Do you offer custom solutions?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-text-secondary">
                 Yes! We offer custom AI agent development for enterprise clients. Contact our sales team 
                 to discuss your specific requirements.
               </p>
             </Card>
 
             <Card className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <h3 className="text-lg font-semibold text-text-primary mb-3">
                 What kind of support do you provide?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-text-secondary">
                 All plans include email support. Pro and Enterprise plans include priority support and 
                 dedicated account management.
               </p>

@@ -12,6 +12,7 @@ interface PageProps {
   params: Promise<{
     slug: string
   }>
+  searchParams?: Promise<Record<string, string | string[] | undefined>>
 }
 
 function removeLeadingTitle(markdown: string, title: string) {
@@ -54,7 +55,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-export default async function BlogPostPage({ params }: PageProps) {
+export default async function BlogPostPage({ params, searchParams }: PageProps) {
   const { slug } = await params
   const post = getPostBySlug('blog', slug)
   
@@ -64,9 +65,12 @@ export default async function BlogPostPage({ params }: PageProps) {
   
   const { metadata, content } = post
   const sanitizedContent = removeLeadingTitle(content, metadata.title)
+  const resolvedSearchParams: Record<string, string | string[] | undefined> = (await searchParams) ?? {}
+  const pageParam = resolvedSearchParams.page
+  const normalizedPageParam = Array.isArray(pageParam) ? pageParam[0] : pageParam
   
   return (
-    <div className="py-20 bg-gray-100">
+    <div className="py-20 bg-background-primary">
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs */}
         <Breadcrumbs 
@@ -80,7 +84,8 @@ export default async function BlogPostPage({ params }: PageProps) {
         <div className="flex flex-col gap-4 mb-10 sm:flex-row sm:items-center sm:justify-between">
           {/* Back Link */}
           <BackToBlogLink
-            className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium"
+            className="inline-flex items-center gap-2 text-primary-400 hover:text-primary-300 font-medium"
+            page={normalizedPageParam}
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Blog
@@ -88,7 +93,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
           {/* Meta */}
           {metadata.date && (
-            <div className="flex items-center gap-2 text-gray-600">
+            <div className="flex items-center gap-2 text-text-secondary">
               <Calendar className="w-5 h-5" />
               <time dateTime={metadata.date}>
                 {new Date(metadata.date).toLocaleDateString('en-US', { 
@@ -103,23 +108,23 @@ export default async function BlogPostPage({ params }: PageProps) {
         
         {/* Content */}
         <Card className="p-8 lg:p-12">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h1 className="text-3xl sm:text-4xl font-bold text-text-primary mb-6">
             {metadata.title}
           </h1>
           <div className="prose prose-lg prose-gray max-w-none
-            prose-headings:text-gray-900 prose-headings:font-bold
+            prose-headings:text-text-primary prose-headings:font-bold
             prose-h1:text-4xl prose-h1:mb-6
             prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4
             prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3
-            prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-4
-            prose-a:text-primary-600 prose-a:no-underline hover:prose-a:text-primary-700
-            prose-strong:text-gray-900 prose-strong:font-semibold
+            prose-p:text-text-secondary prose-p:leading-relaxed prose-p:mb-4
+            prose-a:text-primary-400 prose-a:no-underline hover:prose-a:text-primary-300
+            prose-strong:text-text-primary prose-strong:font-semibold
             prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6
             prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-6
-            prose-li:text-gray-700 prose-li:my-2
-            prose-blockquote:border-l-4 prose-blockquote:border-primary-600 prose-blockquote:pl-4 prose-blockquote:italic
-            prose-code:text-primary-600 prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-mono
-            prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:p-4 prose-pre:rounded-lg prose-pre:overflow-x-auto
+            prose-li:text-text-secondary prose-li:my-2
+            prose-blockquote:border-l-4 prose-blockquote:border-primary-500 prose-blockquote:pl-4 prose-blockquote:italic
+            prose-code:text-primary-400 prose-code:bg-background-secondary prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-mono
+            prose-pre:bg-background-secondary prose-pre:text-text-primary prose-pre:p-4 prose-pre:rounded-lg prose-pre:overflow-x-auto
             prose-img:rounded-lg prose-img:shadow-md"
           >
             <Markdown>{sanitizedContent}</Markdown>
@@ -127,17 +132,17 @@ export default async function BlogPostPage({ params }: PageProps) {
         </Card>
         
         {/* CTA Section */}
-        <Card className="p-8 mt-12 bg-gradient-to-r from-primary-50 to-primary-100 border-primary-200">
+        <Card className="p-8 mt-12 bg-gradient-to-r from-primary-800 to-primary-700 border-primary-700">
           <div className="text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl font-bold text-text-primary mb-4">
               Ready to Get Started?
             </h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-text-secondary mb-6">
               Explore our AI solutions and start automating your business today.
             </p>
             <Link 
               href="/solutions"
-              className="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 bg-primary-500 text-white rounded-lg font-medium hover:bg-primary-600 transition-colors"
             >
               View Solutions
             </Link>

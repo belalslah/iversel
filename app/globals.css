@@ -4,6 +4,11 @@
 
 @layer base {
   body {
-    @apply bg-gray-100 text-gray-900 antialiased;
+    @apply bg-background-primary text-text-primary antialiased;
+  }
+  
+  /* Ensure consistent dark theme */
+  html {
+    color-scheme: dark;
   }
 }

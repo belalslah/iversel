@@ -31,14 +31,14 @@ const featuredSolutions = [
 
 export default function FeaturedSolutions() {
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="py-20 bg-background-tertiary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-text-primary mb-4">
             Popular AI Solutions
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-text-secondary max-w-2xl mx-auto">
             Pre-built AI agents ready to deploy. Choose from our most popular solutions.
           </p>
         </div>
@@ -49,26 +49,26 @@ export default function FeaturedSolutions() {
             const Icon = solution.icon
             return (
               <Card key={solution.slug} hover className="p-6 flex flex-col">
-                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                  <Icon className="w-6 h-6 text-primary-600" />
+                <div className="w-12 h-12 bg-primary-800 rounded-lg flex items-center justify-center mb-4">
+                  <Icon className="w-6 h-6 text-primary-400" />
                 </div>
                 
-                <span className="text-sm font-medium text-primary-600 mb-2">
+                <span className="text-sm font-medium text-primary-400 mb-2">
                   {solution.category}
                 </span>
                 
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-bold text-text-primary mb-3">
                   {solution.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-6 flex-grow">
+                <p className="text-text-secondary mb-6 flex-grow">
                   {solution.description}
                 </p>
                 
-                <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                <div className="flex items-center justify-between pt-4 border-t border-border-primary">
                   <div>
-                    <span className="text-sm text-gray-500">Starts at</span>
-                    <p className="text-2xl font-bold text-gray-900 font-mono">${solution.price}</p>
+                    <span className="text-sm text-text-tertiary">Starts at</span>
+                    <p className="text-2xl font-bold text-text-primary font-mono">${solution.price}</p>
                   </div>
                   <Button href={`/solutions/${solution.slug}`} size="sm" aria-label={`View details for ${solution.title}`}>
                     {solution.title}

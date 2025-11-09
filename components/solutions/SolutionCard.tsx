@@ -21,23 +21,23 @@ export default function SolutionCard({
   return (
     <Card hover className="p-6 flex flex-col h-full">
       <div className="flex items-center justify-between mb-4">
-        <span className="text-sm font-medium text-primary-600 bg-primary-50 px-3 py-1 rounded-full">
+        <span className="text-sm font-medium text-primary-400 bg-primary-900 px-3 py-1 rounded-full">
           {category}
         </span>
-        <span className="text-2xl font-bold text-gray-900 font-mono">${price}</span>
+        <span className="text-2xl font-bold text-text-primary font-mono">${price}</span>
       </div>
       
-      <h3 className="text-xl font-bold text-gray-900 mb-3">
+      <h3 className="text-xl font-bold text-text-primary mb-3">
         {title}
       </h3>
       
-      <p className="text-gray-600 mb-6 flex-grow">
+      <p className="text-text-secondary mb-6 flex-grow">
         {description}
       </p>
       
       <Link 
         href={`/solutions/${slug}`}
-        className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium group"
+        className="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium group"
         aria-label={`Explore ${title} solution details`}
       >
         Explore {title}

@@ -5,8 +5,8 @@ import { Briefcase, Users, Zap, Heart, TrendingUp, Globe } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Careers at IVERSEL - Join Our AI Automation Team',
-  description: 'Join IVERSEL and help democratize AI automation. Explore exciting career opportunities in AI, engineering, and business development with our growing team.',
+  title: 'Careers at Kawkab AI - Join Our AI Automation Team',
+  description: 'Join Kawkab AI and help democratize AI automation. Explore exciting career opportunities in AI, engineering, and business development with our growing team.',
   alternates: {
     canonical: 'https://iversel.netlify.app/careers',
   },
@@ -74,7 +74,7 @@ const benefits = [
 
 export default function CareersPage() {
   return (
-    <div className="py-20 bg-gray-100">
+    <div className="py-20 bg-background-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs */}
         <Breadcrumbs 
@@ -86,25 +86,25 @@ export default function CareersPage() {
         
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6">
             Join Our Team
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
             Help us make AI automation accessible to businesses worldwide. We&apos;re looking for 
             talented, passionate people to join our mission.
           </p>
         </div>
 
         {/* Why Join Us */}
-        <Card className="p-12 mb-16 bg-gradient-to-r from-primary-50 to-primary-100 border-primary-200">
+        <Card className="p-12 mb-16 bg-gradient-to-r from-primary-800 to-primary-700 border-primary-700">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Why IVERSEL?</h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              At IVERSEL, you&apos;ll be part of a team that&apos;s revolutionizing how businesses use AI. 
+            <h2 className="text-3xl font-bold text-text-primary mb-6">Why Kawkab AI?</h2>
+            <p className="text-lg text-text-secondary leading-relaxed mb-6">
+              At Kawkab AI, you&apos;ll be part of a team that&apos;s revolutionizing how businesses use AI. 
               We&apos;re not just building products - we&apos;re democratizing access to enterprise-grade 
               AI automation.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-text-secondary leading-relaxed">
               Join us in our mission to make powerful AI tools accessible to businesses of all sizes, 
               and help shape the future of work.
             </p>
@@ -113,7 +113,7 @@ export default function CareersPage() {
 
         {/* Benefits */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl font-bold text-text-primary text-center mb-12">
             Benefits & Perks
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -121,13 +121,13 @@ export default function CareersPage() {
               const Icon = benefit.icon
               return (
                 <Card key={index} className="p-6">
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-primary-600" />
+                  <div className="w-12 h-12 bg-primary-800 rounded-lg flex items-center justify-center mb-4">
+                    <Icon className="w-6 h-6 text-primary-400" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-xl font-bold text-text-primary mb-3">
                     {benefit.title}
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-text-secondary">
                     {benefit.description}
                   </p>
                 </Card>
@@ -138,7 +138,7 @@ export default function CareersPage() {
 
         {/* Open Positions */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl font-bold text-text-primary text-center mb-12">
             Open Positions
           </h2>
           <div className="max-w-4xl mx-auto space-y-4">
@@ -146,10 +146,10 @@ export default function CareersPage() {
               <Card key={index} hover className="p-6">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                   <div className="flex-grow">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    <h3 className="text-xl font-bold text-text-primary mb-2">
                       {position.title}
                     </h3>
-                    <div className="flex flex-wrap gap-3 text-sm text-gray-600">
+                    <div className="flex flex-wrap gap-3 text-sm text-text-secondary">
                       <span className="flex items-center gap-1">
                         <Briefcase className="w-4 h-4" />
                         {position.department}
@@ -158,7 +158,7 @@ export default function CareersPage() {
                         <Globe className="w-4 h-4" />
                         {position.location}
                       </span>
-                      <span className="px-2 py-1 bg-primary-50 text-primary-700 rounded">
+                      <span className="px-2 py-1 bg-primary-800 text-primary-400 rounded">
                         {position.type}
                       </span>
                     </div>
@@ -175,8 +175,8 @@ export default function CareersPage() {
         {/* Culture Section */}
         <Card className="p-12 mb-16">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Our Culture</h2>
-            <div className="space-y-4 text-gray-700 leading-relaxed">
+            <h2 className="text-3xl font-bold text-text-primary mb-6 text-center">Our Culture</h2>
+            <div className="space-y-4 text-text-secondary leading-relaxed">
               <p>
                 We believe in creating an environment where everyone can do their best work. Our culture 
                 is built on trust, transparency, and collaboration.
@@ -195,12 +195,12 @@ export default function CareersPage() {
 
         {/* CTA Section */}
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl font-bold text-text-primary mb-6">
             Don&apos;t See the Right Role?
           </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
             We&apos;re always looking for talented people. Send us your resume and tell us why 
-            you&apos;d be a great fit for IVERSEL.
+            you&apos;d be a great fit for Kawkab AI.
           </p>
           <Button href="/contact" size="lg">
             Get in Touch

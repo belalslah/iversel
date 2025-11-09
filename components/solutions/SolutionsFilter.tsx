@@ -27,8 +27,8 @@ export default function SolutionsFilter({ solutions }: SolutionsFilterProps) {
           onClick={() => setSelectedCategory('all')}
           className={`px-4 py-2 rounded-lg font-medium transition-colors ${
             selectedCategory === 'all'
-              ? 'bg-primary-600 text-white'
-              : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
+              ? 'bg-primary-600 text-text-primary'
+              : 'bg-background-elevated text-text-secondary hover:bg-background-tertiary border border-border-primary'
           }`}
         >
           All Solutions
@@ -39,8 +39,8 @@ export default function SolutionsFilter({ solutions }: SolutionsFilterProps) {
             onClick={() => setSelectedCategory(category || '')}
             className={`px-4 py-2 rounded-lg font-medium transition-colors ${
               selectedCategory === category
-                ? 'bg-primary-600 text-white'
-                : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
+                ? 'bg-primary-600 text-text-primary'
+                : 'bg-background-elevated text-text-secondary hover:bg-background-tertiary border border-border-primary'
             }`}
           >
             {category}
@@ -64,7 +64,7 @@ export default function SolutionsFilter({ solutions }: SolutionsFilterProps) {
         </div>
       ) : (
         <div className="text-center py-12">
-          <p className="text-gray-600">No solutions found in this category.</p>
+          <p className="text-text-secondary">No solutions found in this category.</p>
         </div>
       )}
     </>

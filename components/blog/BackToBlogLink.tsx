@@ -1,35 +1,22 @@
-'use client'
 
-import { useRouter } from 'next/navigation'
-import { useCallback } from 'react'
+import Link from 'next/link'
 import type { ReactNode } from 'react'
 
 interface BackToBlogLinkProps {
   className?: string
   children: ReactNode
+  page?: string
 }
 
-export default function BackToBlogLink({ className = '', children }: BackToBlogLinkProps) {
-  const router = useRouter()
-
-  const handleClick = useCallback(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
-
-    window.setTimeout(() => {
-      router.push('/blog')
-    }, 400)
-  }, [router])
+export default function BackToBlogLink({ className = '', children, page }: BackToBlogLinkProps) {
+  const href = page ? `/blog?page=${page}` : '/blog'
 
   return (
-    <button
-      type="button"
-      onClick={handleClick}
+    <Link
+      href={href}
       className={className}
     >
       {children}
-    </button>
+    </Link>
   )
 }

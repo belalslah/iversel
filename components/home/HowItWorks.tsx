@@ -23,14 +23,14 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-background-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-text-primary mb-4">
             Get Your AI Solution in 3 Simple Steps
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-text-secondary max-w-2xl mx-auto">
             From browsing to deployment in minutes. No technical expertise required.
           </p>
         </div>
@@ -43,25 +43,25 @@ export default function HowItWorks() {
               <div key={index} className="relative">
                 {/* Connector Line (hidden on mobile) */}
                 {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-primary-200" />
+                  <div className="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-primary-800" />
                 )}
                 
-                <div className="relative bg-white rounded-lg p-8 shadow-lg border border-gray-200">
+                <div className="relative bg-background-elevated rounded-lg p-8 shadow-lg border border-border-primary">
                   {/* Number Badge */}
-                  <div className="absolute -top-4 -left-4 w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
+                  <div className="absolute -top-4 -left-4 w-12 h-12 bg-primary-600 text-text-primary rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
                     {step.number}
                   </div>
                   
                   {/* Icon */}
-                  <div className="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-6 mt-2 shadow-md">
-                    <Icon className="w-7 h-7 text-primary-600" />
+                  <div className="w-14 h-14 bg-primary-800 rounded-lg flex items-center justify-center mb-6 mt-2 shadow-md">
+                    <Icon className="w-7 h-7 text-primary-400" />
                   </div>
                   
                   {/* Content */}
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-xl font-bold text-text-primary mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-text-secondary">
                     {step.description}
                   </p>
                 </div>

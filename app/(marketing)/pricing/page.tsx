@@ -70,7 +70,7 @@ const pricingTiers = [
 
 export default function PricingPage() {
   return (
-    <div className="py-20 bg-gray-100">
+    <div className="py-20 bg-background-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs */}
         <Breadcrumbs 
@@ -82,10 +82,10 @@ export default function PricingPage() {
         
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6">
             Simple, Transparent Pricing
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
             Choose the plan that fits your needs. All plans include free setup, training, and 24/7 support.
           </p>
         </div>
@@ -102,7 +102,7 @@ export default function PricingPage() {
               {/* Popular Badge */}
               {tier.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="inline-flex items-center gap-1 bg-primary-600 text-white px-4 py-1 rounded-full text-sm font-medium">
+                  <span className="inline-flex items-center gap-1 bg-primary-600 text-text-primary px-4 py-1 rounded-full text-sm font-medium">
                     <Sparkles className="w-4 h-4" />
                     Most Popular
                   </span>
@@ -110,12 +110,12 @@ export default function PricingPage() {
               )}
               
               {/* Tier Name */}
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              <h2 className="text-2xl font-bold text-text-primary mb-2">
                 {tier.name}
               </h2>
               
               {/* Description */}
-              <p className="text-gray-600 mb-6">
+              <p className="text-text-secondary mb-6">
                 {tier.description}
               </p>
               
@@ -123,11 +123,11 @@ export default function PricingPage() {
               <div className="mb-8">
                 {tier.price ? (
                   <>
-                    <span className="text-5xl font-bold text-gray-900 font-mono">${tier.price}</span>
-                    <span className="text-gray-600 ml-2">/month</span>
+                    <span className="text-5xl font-bold text-text-primary font-mono">${tier.price}</span>
+                    <span className="text-text-secondary ml-2">/month</span>
                   </>
                 ) : (
-                  <span className="text-5xl font-bold text-gray-900 font-mono">Custom</span>
+                  <span className="text-5xl font-bold text-text-primary font-mono">Custom</span>
                 )}
               </div>
               
@@ -135,8 +135,8 @@ export default function PricingPage() {
               <ul className="space-y-4 mb-8 flex-grow">
                 {tier.features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700">{feature}</span>
+                    <Check className="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-text-secondary">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -155,56 +155,56 @@ export default function PricingPage() {
         
         {/* FAQ Section */}
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-3xl font-bold text-text-primary mb-12 text-center">
             Frequently Asked Questions
           </h2>
           
           <div className="space-y-8">
             <Card className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <h3 className="text-lg font-semibold text-text-primary mb-3">
                 Can I change plans later?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-text-secondary">
                 Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately, 
                 and we&apos;ll prorate any charges or credits.
               </p>
             </Card>
             
             <Card className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <h3 className="text-lg font-semibold text-text-primary mb-3">
                 What happens if I exceed my interaction limit?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-text-secondary">
                 We&apos;ll notify you when you&apos;re approaching your limit. You can upgrade your plan or 
                 purchase additional interactions at $0.05 per interaction.
               </p>
             </Card>
             
             <Card className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <h3 className="text-lg font-semibold text-text-primary mb-3">
                 Do you offer refunds?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-text-secondary">
                 Yes! We offer a 14-day money-back guarantee on the Starter plan and 30 days on the Pro plan. 
                 If you&#39;re not satisfied, we&#39;ll refund your payment in full.
               </p>
             </Card>
             
             <Card className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <h3 className="text-lg font-semibold text-text-primary mb-3">
                 Is there a setup fee?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-text-secondary">
                 No! Setup is completely free on all plans. We&apos;ll help you get started and train your AI agent 
                 at no additional cost.
               </p>
             </Card>
             
             <Card className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <h3 className="text-lg font-semibold text-text-primary mb-3">
                 What payment methods do you accept?
               </h3>
-              <p className="text-gray-600">
+              <p className="text-text-secondary">
                 We accept all major credit cards (Visa, Mastercard, American Express) and offer invoicing 
                 for annual Enterprise plans.
               </p>
@@ -214,11 +214,11 @@ export default function PricingPage() {
         
         {/* Contact CTA */}
         <div className="mt-20 text-center">
-          <Card className="p-12 bg-gradient-to-r from-primary-50 to-primary-100 border-primary-200">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <Card className="p-12 bg-gradient-to-r from-primary-900 to-primary-800 border-primary-700">
+            <h2 className="text-3xl font-bold text-text-primary mb-4">
               Still Have Questions?
             </h2>
-            <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
               Our team is here to help you find the perfect solution for your business.
             </p>
             <Button href="#contact" size="lg">

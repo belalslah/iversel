@@ -28,14 +28,14 @@ export default function Navbar() {
     return pathname.startsWith(href)
   }
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <nav className="sticky top-0 z-50 bg-background-secondary border-b border-border-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center" aria-label="IVERSEL home">
+          <Link href="/" className="flex items-center" aria-label="Kawkab AI home">
             <Image
-              src="/iversel-header-logo.svg"
-              alt="IVERSEL logo"
+              src="/FinallLogo-01.png"
+              alt="Kawkab AI logo"
               width={210}
               height={64}
               className="h-12 w-auto sm:h-14"
@@ -49,13 +49,13 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`relative text-gray-700 hover:text-primary-600 transition-colors font-medium ${
-                  isActive(link.href) ? 'text-primary-600' : ''
+                className={`relative text-text-secondary hover:text-primary-400 transition-colors font-medium ${
+                  isActive(link.href) ? 'text-primary-400' : ''
                 }`}
               >
                 {link.label}
                 {isActive(link.href) && (
-                  <span className="absolute -bottom-[21px] left-0 right-0 h-0.5 bg-primary-600" />
+                  <span className="absolute -bottom-[21px] left-0 right-0 h-0.5 bg-primary-400" />
                 )}
               </Link>
             ))}
@@ -64,7 +64,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-gray-700 hover:text-primary-600"
+            className="lg:hidden p-2 text-text-secondary hover:text-primary-400"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -80,7 +80,7 @@ export default function Navbar() {
         
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-gray-200">
+          <div className="lg:hidden border-t border-border-primary">
             <div className="px-4 py-4 space-y-3">
               {navLinks.map((link) => (
                 <Link
@@ -89,8 +89,8 @@ export default function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${
                     isActive(link.href)
-                      ? 'bg-primary-50 text-primary-600'
-                      : 'text-gray-700 hover:bg-gray-50 hover:text-primary-600'
+                      ? 'bg-primary-900 text-primary-400'
+                      : 'text-text-secondary hover:bg-background-tertiary hover:text-primary-400'
                   }`}
                 >
                   {link.label}

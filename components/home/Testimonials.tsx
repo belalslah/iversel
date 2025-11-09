@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: 'Sarah Johnson',
     role: 'CEO, TechStart Inc.',
-    content: 'IVERSEL transformed our customer support. We now handle 3x more inquiries with the same team size.',
+    content: 'Kawkab AI transformed our customer support. We now handle 3x more inquiries with the same team size.',
     rating: 5,
   },
   {
@@ -24,15 +24,15 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="py-20 bg-background-tertiary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-text-primary mb-4">
             Trusted by Modern Businesses
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Join hundreds of companies already automating with IVERSEL.
+          <p className="text-xl text-text-secondary max-w-2xl mx-auto">
+            Join hundreds of companies already automating with Kawkab AI.
           </p>
         </div>
         
@@ -43,19 +43,19 @@ export default function Testimonials() {
               {/* Stars */}
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  <Star key={i} className="w-5 h-5 fill-rating-star text-rating-star" />
                 ))}
               </div>
               
               {/* Content */}
-              <p className="text-gray-700 mb-6 italic">
+              <p className="text-text-secondary mb-6 italic">
                 &ldquo;{testimonial.content}&rdquo;
               </p>
               
               {/* Author */}
               <div>
-                <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                <p className="text-sm text-gray-600">{testimonial.role}</p>
+                <p className="font-semibold text-text-primary">{testimonial.name}</p>
+                <p className="text-sm text-text-tertiary">{testimonial.role}</p>
               </div>
             </Card>
           ))}

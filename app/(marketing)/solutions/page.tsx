@@ -15,7 +15,7 @@ export default function SolutionsPage() {
   const solutions = getPosts('solutions')
   
   return (
-    <div className="py-20 bg-gray-100">
+    <div className="py-20 bg-background-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs */}
         <Breadcrumbs 
@@ -27,10 +27,10 @@ export default function SolutionsPage() {
         
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6">
             Our AI Solutions
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
             Pre-built AI agents ready to deploy. Choose from our library of solutions 
             designed to automate your business processes.
           </p>
@@ -41,21 +41,21 @@ export default function SolutionsPage() {
           <SolutionsFilter solutions={solutions} />
         ) : (
           <div className="text-center py-12">
-            <p className="text-gray-600">No solutions available yet. Check back soon!</p>
+            <p className="text-text-secondary">No solutions available yet. Check back soon!</p>
           </div>
         )}
         
         {/* CTA Section */}
-        <div className="mt-20 text-center bg-white rounded-2xl p-12 shadow-sm border border-gray-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        <div className="mt-20 text-center bg-background-elevated rounded-2xl p-12 shadow-sm border border-border-primary">
+          <h2 className="text-3xl font-bold text-text-primary mb-4">
             Need a Custom Solution?
           </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
             Can&apos;t find what you&apos;re looking for? We build custom AI agents tailored to your specific needs.
           </p>
           <a 
             href="#contact" 
-            className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition-colors"
+            className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-text-primary rounded-lg font-medium hover:bg-primary-700 transition-colors"
           >
             Contact Sales
           </a>
