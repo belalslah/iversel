@@ -32,10 +32,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center" aria-label="Kawkab AI home">
+          <Link href="/" className="flex items-center" aria-label="IVERSEL home">
             <Image
-              src="/FinallLogo-01.png"
-              alt="Kawkab AI logo"
+              src="/iversellogo.svg"
+              alt="IVERSEL logo"
               width={210}
               height={64}
               className="h-12 w-auto sm:h-14"

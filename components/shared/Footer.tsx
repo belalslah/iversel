@@ -103,14 +103,14 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border-primary flex flex-col items-center gap-6 md:flex-row md:justify-between">
           <p className="text-text-tertiary text-sm text-center md:text-left">
-            © {currentYear} Kawkab AI. All rights reserved.
+            © {currentYear} IVERSEL. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a
               href="https://www.facebook.com/share/17ZHusZ5Jp/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Kawkab AI on Facebook"
+              aria-label="IVERSEL on Facebook"
               className="flex items-center gap-2 rounded-full border border-border-primary px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:border-border-accent hover:bg-background-tertiary hover:text-primary-400"
             >
               <Facebook className="h-4 w-4" />

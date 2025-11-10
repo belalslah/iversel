@@ -5,8 +5,8 @@ import { Target, Users, Zap, Heart } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Kawkab AI - Making AI Automation Accessible',
-  description: 'Discover Kawkab AI\'s mission to democratize AI automation. We make enterprise-grade AI solutions affordable and accessible for businesses of all sizes.',
+  title: 'About IVERSEL - Making AI Automation Accessible',
+  description: 'Discover IVERSEL\'s mission to democratize AI automation. We make enterprise-grade AI solutions affordable and accessible for businesses of all sizes.',
   alternates: {
     canonical: 'https://iversel.netlify.app/about',
   },
@@ -27,7 +27,7 @@ export default function AboutPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6">
-            About Kawkab AI
+            About IVERSEL
           </h1>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
             We&apos;re on a mission to make enterprise-grade AI automation accessible to businesses of all sizes.
@@ -39,7 +39,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-text-primary mb-6">Our Mission</h2>
             <p className="text-lg text-text-secondary leading-relaxed mb-6">
-              At Kawkab AI, we believe that powerful AI automation shouldn&apos;t be reserved for Fortune 500 companies. 
+              At IVERSEL, we believe that powerful AI automation shouldn&apos;t be reserved for Fortune 500 companies. 
               Every business, regardless of size, deserves access to cutting-edge AI technology that can transform 
               their operations and drive growth.
             </p>
@@ -102,7 +102,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-text-primary mb-6 text-center">Our Story</h2>
             <div className="space-y-4 text-text-secondary leading-relaxed">
               <p>
-                Kawkab AI was founded with a simple observation: while AI technology was advancing rapidly, 
+                IVERSEL was founded with a simple observation: while AI technology was advancing rapidly, 
                 it remained out of reach for most small and medium-sized businesses due to high costs and 
                 technical complexity.
               </p>
@@ -125,7 +125,7 @@ export default function AboutPage() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-text-secondary mb-8">
-            Join hundreds of businesses already automating with Kawkab AI.
+            Join hundreds of businesses already automating with IVERSEL.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/solutions" size="lg">

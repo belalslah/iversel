@@ -5,7 +5,7 @@ import { Mail, MessageSquare, Clock, Facebook, Linkedin, Instagram, MessageCircl
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact Kawkab AI - Get AI Automation Support',
+  title: 'Contact IVERSEL - Get AI Automation Support',
   description: 'Get in touch with our AI automation experts. We\'re here to help you find the perfect solution and answer all your questions about AI implementation.',
   alternates: {
     canonical: 'https://iversel.netlify.app/contact',
@@ -192,7 +192,7 @@ export default function ContactPage() {
                   href="https://www.facebook.com/share/17ZHusZ5Jp/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Kawkab AI on Facebook"
+                  aria-label="IVERSEL on Facebook"
                   className="flex items-center gap-2 rounded-full border border-border-primary px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:border-primary-500 hover:bg-primary-800 hover:text-primary-400"
                 >
                   <Facebook className="h-4 w-4" />

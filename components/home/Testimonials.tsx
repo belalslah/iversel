@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: 'Sarah Johnson',
     role: 'CEO, TechStart Inc.',
-    content: 'Kawkab AI transformed our customer support. We now handle 3x more inquiries with the same team size.',
+    content: 'IVERSEL transformed our customer support. We now handle 3x more inquiries with the same team size.',
     rating: 5,
   },
   {
@@ -32,7 +32,7 @@ export default function Testimonials() {
             Trusted by Modern Businesses
           </h2>
           <p className="text-xl text-text-secondary max-w-2xl mx-auto">
-            Join hundreds of companies already automating with Kawkab AI.
+            Join hundreds of companies already automating with IVERSEL.
           </p>
         </div>
         

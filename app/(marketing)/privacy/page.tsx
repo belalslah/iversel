@@ -3,8 +3,8 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - How Kawkab AI Protects Your Data',
-  description: 'Read Kawkab AI\'s privacy policy to understand how we collect, use, and protect your personal information. Your data security is our top priority.',
+  title: 'Privacy Policy - How IVERSEL Protects Your Data',
+  description: 'Read IVERSEL\'s privacy policy to understand how we collect, use, and protect your personal information. Your data security is our top priority.',
   alternates: {
     canonical: 'https://iversel.netlify.app/privacy',
   },
@@ -38,7 +38,7 @@ export default function PrivacyPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-text-primary mb-4">Introduction</h2>
               <p className="text-text-secondary leading-relaxed mb-4">
-                At Kawkab AI, we take your privacy seriously. This Privacy Policy explains how we collect, 
+                At IVERSEL, we take your privacy seriously. This Privacy Policy explains how we collect, 
                 use, disclose, and safeguard your information when you visit our website or use our services.
               </p>
               <p className="text-text-secondary leading-relaxed">

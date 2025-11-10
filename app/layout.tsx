@@ -19,7 +19,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: {
     template: '%s | iversel',
-    default: 'Kawkab AI - AI Solutions',
+    default: 'IVERSEL - AI Solutions',
   },
   description: 'Transform your business with AI automation starting at $30. Deploy powerful AI agents in minutes. Enterprise-grade solutions made accessible.',
   authors: [{ name: 'iversel' }],
@@ -34,13 +34,13 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://iversel.netlify.app',
-    siteName: 'Kawkab AI',
-    title: 'Kawkab AI - AI Solutions',
+    siteName: 'IVERSEL',
+    title: 'IVERSEL - AI Solutions',
     description: 'Discover powerful AI agents and automation solutions starting from just $30.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kawkab AI - AI Solutions',
+    title: 'IVERSEL - AI Solutions',
     description: 'Discover powerful AI agents and automation solutions starting from just $30.',
   },
   robots: {

@@ -30,7 +30,7 @@ export default function HeroSection() {
           </div>
           
           {/* Features Grid */}
-          <h2 className="sr-only">Key benefits of Kawkab AI AI solutions</h2>
+          <h2 className="sr-only">Key benefits of IVERSEL AI solutions</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-20">
             <div className="flex flex-col items-center text-center">
               <div className="w-12 h-12 bg-primary-800 rounded-lg flex items-center justify-center mb-4 shadow-md">

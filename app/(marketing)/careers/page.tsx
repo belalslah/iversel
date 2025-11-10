@@ -5,8 +5,8 @@ import { Briefcase, Users, Zap, Heart, TrendingUp, Globe } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Careers at Kawkab AI - Join Our AI Automation Team',
-  description: 'Join Kawkab AI and help democratize AI automation. Explore exciting career opportunities in AI, engineering, and business development with our growing team.',
+  title: 'Careers at IVERSEL - Join Our AI Automation Team',
+  description: 'Join IVERSEL and help democratize AI automation. Explore exciting career opportunities in AI, engineering, and business development with our growing team.',
   alternates: {
     canonical: 'https://iversel.netlify.app/careers',
   },
@@ -98,9 +98,9 @@ export default function CareersPage() {
         {/* Why Join Us */}
         <Card className="p-12 mb-16 bg-gradient-to-r from-primary-800 to-primary-700 border-primary-700">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-text-primary mb-6">Why Kawkab AI?</h2>
+            <h2 className="text-3xl font-bold text-text-primary mb-6">Why IVERSEL?</h2>
             <p className="text-lg text-text-secondary leading-relaxed mb-6">
-              At Kawkab AI, you&apos;ll be part of a team that&apos;s revolutionizing how businesses use AI. 
+              At IVERSEL, you&apos;ll be part of a team that&apos;s revolutionizing how businesses use AI. 
               We&apos;re not just building products - we&apos;re democratizing access to enterprise-grade 
               AI automation.
             </p>
@@ -200,7 +200,7 @@ export default function CareersPage() {
           </h2>
           <p className="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
             We&apos;re always looking for talented people. Send us your resume and tell us why 
-            you&apos;d be a great fit for Kawkab AI.
+            you&apos;d be a great fit for IVERSEL.
           </p>
           <Button href="/contact" size="lg">
             Get in Touch
