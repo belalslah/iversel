@@ -26,12 +26,6 @@ const openPositions = [
     type: 'Full-time',
   },
   {
-    title: 'Customer Success Manager',
-    department: 'Customer Success',
-    location: 'Remote',
-    type: 'Full-time',
-  },
-  {
     title: 'Marketing Manager',
     department: 'Marketing',
     location: 'Remote',

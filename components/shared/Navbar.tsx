@@ -33,7 +33,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center" aria-label="IVERSEL home">
             <Image
-              src="/iversellogo.webp"
+              src="/ivlogo.webp"
               alt="IVERSEL logo"
               width={210}
               height={64}
