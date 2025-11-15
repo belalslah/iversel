@@ -100,7 +100,7 @@ export default function TermsPage() {
               <h3 className="text-xl font-semibold text-text-primary mb-3">Billing</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 For B2B clients, payment terms are established in your service agreement. Custom billing 
-                arrangements are available based on your organization's needs.
+                arrangements are available based on your organization&apos;s needs.
               </p>
 
               <h3 className="text-xl font-semibold text-text-primary mb-3">Refunds</h3>
