@@ -34,7 +34,7 @@ export const colors = {
   text: {
     primary: '#f5f5f5',       // Main text
     secondary: '#a3a3a3',     // Secondary text
-    tertiary: '#737373',      // Muted text
+    tertiary: '#8a8a8a',      // Muted text (improved contrast)
     inverse: '#171717',       // Text on light backgrounds
   },
 
