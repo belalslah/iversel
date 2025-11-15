@@ -1,0 +1,17 @@
+{
+  "name": "IVERSEL - AI Automation Solutions",
+  "short_name": "IVERSEL",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#22c55e",
+  "background_color": "#0a0a0a",
+  "display": "standalone",
+  "start_url": "/",
+  "description": "Transform your business with AI automation solutions"
+}
