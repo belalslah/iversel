@@ -54,7 +54,7 @@ export default function SolutionsPage() {
             Can&apos;t find what you&apos;re looking for? We build custom AI agents tailored to your specific needs.
           </p>
           <a 
-            href="#contact" 
+            href="contact" 
             className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-text-primary rounded-lg font-medium hover:bg-primary-700 transition-colors"
           >
             Contact Sales

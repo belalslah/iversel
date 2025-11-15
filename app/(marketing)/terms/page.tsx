@@ -93,37 +93,26 @@ export default function TermsPage() {
               </p>
             </section>
 
-            {/* Subscription and Payment */}
+            {/* Payment Terms */}
             <section className="mb-8">
-              <h2 className="text-2xl font-bold text-text-primary mb-4">Subscription and Payment</h2>
+              <h2 className="text-2xl font-bold text-text-primary mb-4">Payment Terms</h2>
               
-              <h3 className="text-xl font-semibold text-text-primary mb-3">Pricing</h3>
-              <p className="text-text-secondary leading-relaxed mb-4">
-                Our pricing is described on our website and is subject to change. We will provide notice of any 
-                price changes. Continued use of the Services after a price change constitutes acceptance of the 
-                new pricing.
-              </p>
-
               <h3 className="text-xl font-semibold text-text-primary mb-3">Billing</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
-                Subscription fees are billed in advance on a monthly or annual basis. You authorize us to charge 
-                your payment method on a recurring basis. If payment fails, we may suspend or terminate your access.
+                For B2B clients, payment terms are established in your service agreement. Custom billing 
+                arrangements are available based on your organization's needs.
               </p>
 
               <h3 className="text-xl font-semibold text-text-primary mb-3">Refunds</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
-                We offer refunds as described in our pricing page:
+                Refund policies are defined in your individual service agreement and may vary based on 
+                the services purchased and contract terms.
               </p>
-              <ul className="list-disc pl-6 mb-4 space-y-2 text-text-secondary">
-                <li>Starter plan: 14-day money-back guarantee</li>
-                <li>Pro plan: 30-day money-back guarantee</li>
-                <li>Enterprise plan: Custom terms</li>
-              </ul>
 
-              <h3 className="text-xl font-semibold text-text-primary mb-3">Cancellation</h3>
+              <h3 className="text-xl font-semibold text-text-primary mb-3">Contract Termination</h3>
               <p className="text-text-secondary leading-relaxed">
-                You may cancel your subscription at any time. Cancellations take effect at the end of the current 
-                billing period. No refunds will be provided for partial billing periods.
+                Either party may terminate the service agreement according to the terms specified in your 
+                contract. Please refer to your service agreement for specific termination conditions.
               </p>
             </section>
 

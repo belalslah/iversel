@@ -19,8 +19,7 @@ iversel/
 │   ├── (marketing)/          # Marketing pages group
 │   │   ├── page.tsx          # Homepage
 │   │   ├── solutions/        # Solutions pages
-│   │   ├── blog/             # Blog pages
-│   │   └── pricing/          # Pricing page
+│   │   └── blog/             # Blog pages
 │   ├── layout.tsx            # Root layout
 │   ├── globals.css           # Global styles
 │   ├── sitemap.ts            # Dynamic sitemap

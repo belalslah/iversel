@@ -22,12 +22,12 @@ export default function CTASection() {
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
           <Button 
-            href="/pricing" 
+            href="/contact" 
             variant="outline" 
             size="lg"
             className="border-text-primary text-text-primary hover:bg-primary-800"
           >
-            View Pricing
+            Contact Sales
           </Button>
         </div>
       </div>

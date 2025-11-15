@@ -144,10 +144,10 @@ export default async function SolutionDetailPage({ params }: PageProps) {
                 
                 {/* CTA Buttons */}
                 <div className="space-y-3">
-                  <Button href="#purchase" className="w-full justify-center">
+                  <Button href="../contact" className="w-full justify-center">
                     Purchase Solution
                   </Button>
-                  <Button href="#demo" variant="outline" className="w-full justify-center">
+                  <Button href="../contact" variant="outline" className="w-full justify-center">
                     Request Demo
                   </Button>
                 </div>

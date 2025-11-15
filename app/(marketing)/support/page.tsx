@@ -1,7 +1,7 @@
 import Card from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
-import { Mail, MessageSquare, Book, HelpCircle, Clock, CheckCircle } from 'lucide-react'
+import { Mail, Book, HelpCircle, Clock, CheckCircle } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -19,15 +19,7 @@ const supportOptions = [
     description: 'Get personalized help from our support team',
     action: 'Send us an email',
     href: 'mailto:belalabukhadija97@gmail.com',
-    responseTime: 'Response within 24 hours',
-  },
-  {
-    icon: MessageSquare,
-    title: 'Contact Form',
-    description: 'Fill out our contact form for detailed inquiries',
-    action: 'Go to Contact',
-    href: '/contact',
-    responseTime: 'Response within 24 hours',
+    responseTime: 'Response within 1 hour',
   },
   {
     icon: Book,
@@ -46,7 +38,7 @@ const faqs = [
   },
   {
     question: 'What kind of support do you offer?',
-    answer: 'We offer email support, detailed documentation, and implementation guides. Our team responds to all inquiries within 24 hours during business days.',
+    answer: 'We offer email support, detailed documentation, and implementation guides. Our team responds to all inquiries within 1 hour.',
   },
   {
     question: 'Can I customize the AI solutions?',
@@ -93,7 +85,7 @@ export default function SupportPage() {
           <h2 className="text-3xl font-bold text-text-primary mb-8 text-center">
             Get in Touch
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {supportOptions.map((option) => (
               <Card key={option.title} hover className="p-8">
                 <div className="flex flex-col items-center text-center">
@@ -190,7 +182,7 @@ export default function SupportPage() {
           <div className="inline-flex items-center px-6 py-3 bg-background-elevated rounded-lg shadow-sm border border-border-primary">
             <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
             <span className="text-text-secondary">
-              <strong className="text-text-primary">Support Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM (UTC+3)
+              <strong className="text-text-primary">Support Hours:</strong> Available 24/7
             </span>
           </div>
         </div>

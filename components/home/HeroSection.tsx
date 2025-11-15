@@ -10,7 +10,7 @@ export default function HeroSection() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-400 tracking-tight mb-6">
             Smarter AI Solutions.
             <br />
-            Simple Pricing.
+            For Your Business.
           </h1>
           
           {/* Subheadline */}
@@ -24,8 +24,8 @@ export default function HeroSection() {
             <Button id="hero-primary-cta" href="/solutions" size="lg">
               Explore AI Solutions
             </Button>
-            <Button href="/pricing" variant="outline" size="lg">
-              Compare Pricing Plans
+            <Button href="/contact" variant="outline" size="lg">
+              Contact Sales
             </Button>
           </div>
           
@@ -44,8 +44,8 @@ export default function HeroSection() {
               <div className="w-12 h-12 bg-primary-800 rounded-lg flex items-center justify-center mb-4 shadow-md">
                 <Sparkles className="w-6 h-6 text-primary-400" />
               </div>
-              <h3 className="text-lg font-semibold text-text-primary mb-2">Affordable</h3>
-              <p className="text-text-secondary">Enterprise AI starting at just $30</p>
+              <h3 className="text-lg font-semibold text-text-primary mb-2">Scalable</h3>
+              <p className="text-text-secondary">Enterprise AI that grows with your business</p>
             </div>
             
             <div className="flex flex-col items-center text-center">

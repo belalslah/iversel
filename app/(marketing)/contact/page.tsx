@@ -1,7 +1,7 @@
 import Card from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
-import { Mail, MessageSquare, Clock, Facebook, Linkedin, Instagram, MessageCircle } from 'lucide-react'
+import { Mail, Clock, Facebook, Linkedin, Instagram, MessageCircle } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -34,109 +34,9 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-          {/* Contact Form */}
-          <div className="lg:col-span-2">
-            <Card className="p-8">
-              <h2 className="text-2xl font-bold text-text-primary mb-6">Send us a Message</h2>
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-text-secondary mb-2">
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      name="firstName"
-                      className="w-full px-4 py-3 bg-background-secondary border border-border-primary rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-text-primary"
-                      placeholder="John"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-text-secondary mb-2">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      name="lastName"
-                      className="w-full px-4 py-3 bg-background-secondary border border-border-primary rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-text-primary"
-                      placeholder="Doe"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-text-secondary mb-2">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full px-4 py-3 bg-background-secondary border border-border-primary rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-text-primary"
-                    placeholder="john@example.com"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-text-secondary mb-2">
-                    Company Name (Optional)
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    className="w-full px-4 py-3 bg-background-secondary border border-border-primary rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-text-primary"
-                    placeholder="Your Company"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-text-secondary mb-2">
-                    Subject
-                  </label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    className="w-full px-4 py-3 bg-background-secondary border border-border-primary rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-text-primary"
-                    required
-                  >
-                    <option value="">Select a subject</option>
-                    <option value="sales">Sales Inquiry</option>
-                    <option value="support">Technical Support</option>
-                    <option value="partnership">Partnership Opportunity</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-text-secondary mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={6}
-                    className="w-full px-4 py-3 bg-background-secondary border border-border-primary rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-text-primary"
-                    placeholder="Tell us about your needs..."
-                    required
-                  />
-                </div>
-
-                <Button type="submit" size="lg" className="w-full sm:w-auto">
-                  Send Message
-                </Button>
-              </form>
-            </Card>
-          </div>
-
-          {/* Contact Information */}
-          <div className="lg:col-span-1 space-y-6">
+        {/* Contact Information */}
+        <div className="max-w-2xl mx-auto mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="p-6">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary-800 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -157,28 +57,12 @@ export default function ContactPage() {
             <Card className="p-6">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary-800 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MessageSquare className="w-6 h-6 text-primary-400" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-text-primary mb-2">Live Chat</h3>
-                  <p className="text-text-secondary text-sm">
-                    Available Monday - Friday
-                    <br />
-                    9:00 AM - 6:00 PM EST
-                  </p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-primary-800 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Clock className="w-6 h-6 text-primary-400" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-text-primary mb-2">Response Time</h3>
                   <p className="text-text-secondary text-sm">
-                    We typically respond within 24 hours on business days.
+                    We typically respond within 1 hour.
                   </p>
                 </div>
               </div>
@@ -274,8 +158,8 @@ export default function ContactPage() {
                 What kind of support do you provide?
               </h3>
               <p className="text-text-secondary">
-                All plans include email support. Pro and Enterprise plans include priority support and 
-                dedicated account management.
+                We provide comprehensive email support for all clients. Enterprise clients receive priority 
+                support and dedicated account management.
               </p>
             </Card>
           </div>

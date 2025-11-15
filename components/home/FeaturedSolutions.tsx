@@ -1,6 +1,6 @@
 import Card from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
-import { MessageSquare, BarChart3, Mail } from 'lucide-react'
+import { MessageSquare, BookOpen, Mail } from 'lucide-react'
 
 const featuredSolutions = [
   {
@@ -12,12 +12,12 @@ const featuredSolutions = [
     slug: 'ai-support-agent',
   },
   {
-    icon: BarChart3,
-    title: 'Business Analytics AI',
-    category: 'Analytics',
-    description: 'Get instant insights from your data with natural language queries. No SQL knowledge required.',
-    price: 79,
-    slug: 'business-analytics-ai',
+    icon: BookOpen,
+    title: 'Intelligent Knowledge Base AI',
+    category: 'Knowledge Management',
+    description: 'Transform your documents into an AI-powered knowledge base that answers questions instantly using advanced RAG technology.',
+    price: 89,
+    slug: 'knowledge-base-rag',
   },
   {
     icon: Mail,
