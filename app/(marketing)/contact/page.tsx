@@ -127,6 +127,25 @@ export default function ContactPage() {
           </div>
         </div>
 
+        {/* Location Map */}
+        <div className="max-w-5xl mx-auto mb-16">
+          <h2 className="text-3xl font-bold text-text-primary text-center mb-6">
+            Visit Us
+          </h2>
+          <div className="rounded-2xl overflow-hidden border border-border-primary shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211.53640793949506!2d35.83337134777714!3d31.97222055436607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca17ed1965e8d%3A0xd93a3913affa5945!2sKing%20Hussein%20Business%20Park!5e0!3m2!1sen!2sjo!4v1765803226024!5m2!1sen!2sjo"
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full"
+            />
+          </div>
+        </div>
+
         {/* FAQ Section */}
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-text-primary text-center mb-12">
