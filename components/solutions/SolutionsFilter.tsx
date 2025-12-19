@@ -22,30 +22,28 @@ export default function SolutionsFilter({ solutions }: SolutionsFilterProps) {
   return (
     <>
       {/* Category Filter */}
-      <div className="flex flex-wrap gap-2 justify-center mb-12">
-        <button 
-          onClick={() => setSelectedCategory('all')}
-          className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-            selectedCategory === 'all'
-              ? 'bg-primary-600 text-text-primary'
-              : 'bg-background-elevated text-text-secondary hover:bg-background-tertiary border border-border-primary'
-          }`}
-        >
-          All Solutions
-        </button>
-        {categories.map((category) => (
-          <button 
-            key={category}
-            onClick={() => setSelectedCategory(category || '')}
-            className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-              selectedCategory === category
-                ? 'bg-primary-600 text-text-primary'
-                : 'bg-background-elevated text-text-secondary hover:bg-background-tertiary border border-border-primary'
-            }`}
+      <div className="mb-12 flex flex-col items-center gap-3">
+        <label htmlFor="solutions-category" className="text-xs font-semibold uppercase tracking-[0.2em] text-text-tertiary">
+          Filter by category
+        </label>
+        <div className="relative w-full max-w-md">
+          <select
+            id="solutions-category"
+            value={selectedCategory}
+            onChange={(event) => setSelectedCategory(event.target.value)}
+            className="w-full appearance-none rounded-xl border border-border-primary bg-background-elevated px-4 py-3 text-sm font-semibold text-text-primary shadow-sm transition focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/30"
           >
-            {category}
-          </button>
-        ))}
+            <option value="all">All Solutions</option>
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+          <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-text-tertiary">
+            ▾
+          </span>
+        </div>
       </div>
       
       {/* Solutions Grid */}
