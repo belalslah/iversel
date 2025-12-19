@@ -68,6 +68,8 @@ export default async function BlogPostPage({ params, searchParams }: PageProps) 
   const resolvedSearchParams: Record<string, string | string[] | undefined> = (await searchParams) ?? {}
   const pageParam = resolvedSearchParams.page
   const normalizedPageParam = Array.isArray(pageParam) ? pageParam[0] : pageParam
+  const queryParam = resolvedSearchParams.q ?? resolvedSearchParams.search
+  const normalizedQueryParam = Array.isArray(queryParam) ? queryParam[0] : queryParam
   
   return (
     <div className="py-20 bg-background-primary">
@@ -86,6 +88,7 @@ export default async function BlogPostPage({ params, searchParams }: PageProps) 
           <BackToBlogLink
             className="inline-flex items-center gap-2 text-primary-400 hover:text-primary-300 font-medium"
             page={normalizedPageParam}
+            query={normalizedQueryParam}
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Blog

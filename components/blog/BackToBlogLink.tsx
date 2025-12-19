@@ -6,10 +6,19 @@ interface BackToBlogLinkProps {
   className?: string
   children: ReactNode
   page?: string
+  query?: string
 }
 
-export default function BackToBlogLink({ className = '', children, page }: BackToBlogLinkProps) {
-  const href = page ? `/blog?page=${page}` : '/blog'
+export default function BackToBlogLink({ className = '', children, page, query }: BackToBlogLinkProps) {
+  const params = new URLSearchParams()
+  if (page) {
+    params.set('page', page)
+  }
+  if (query) {
+    params.set('q', query)
+  }
+  const queryString = params.toString()
+  const href = queryString ? `/blog?${queryString}` : '/blog'
 
   return (
     <Link
